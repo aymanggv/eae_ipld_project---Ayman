@@ -136,7 +136,7 @@ if unique_countries_list is not None and len(selected_cities) > 0:
         city_df_period = city_df.loc[(city_df["Date"] >= start_date) & (city_df["Date"] <= end_date)]     # TODO
         plt.plot(city_df_period["Date"], city_df_period["AvgTemperatureCelsius"], label = city)                # TODO 
         
-    plt.title(f"Temperatures in {', '.join(selected_cities)} from {start_date} {end_date}")   # TODO
+    plt.title(f"Temperatures in {', '.join(selected_cities)} from {start_date} to {end_date}")   # TODO
     plt.xlabel("Date")  # TODO
     plt.ylabel("Temperature (in Celsius)")  # TODO
 
@@ -156,7 +156,7 @@ if unique_countries_list is not None and len(selected_cities) > 0:
         city_df_period = city_df.loc[(city_df["Date"] >= start_date) & (city_df["Date"] <= end_date)]     # TODO
         plt.hist(city_df_period["AvgTemperatureCelsius"], label=city, bins=30, alpha=0.65)                # TODO
 
-    plt.title(f"Temperature Distribution from {start_date} {end_date}")   # TODO
+    plt.title(f"Temperature Distribution from {start_date} to {end_date}")   # TODO
     plt.xlabel("Temperature (in Celsius)")  # TODO
     plt.ylabel("Frequency")  # TODO
 
