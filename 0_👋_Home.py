@@ -11,12 +11,9 @@ st.set_page_config(
 
 # ----- Left menu -----
 with st.sidebar:
-    st.image("eae_img.png", width=200)
-    st.header("Introduction to Programming Languages for Data")
+    st.header("Data Analytics and Data Science Portfolio")
     st.write("###")
-    st.write("***Final Project - Dec 2023***")
     st.write("**Author:** Ayman")
-    st.write("**Instructor:** [Enric Domingo](https://github.com/enricd)")
 
 
 # ----- Top title -----
@@ -39,7 +36,7 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Pursuing my Maters in Big Data and Analytics"   # TODO: Change this
+current_role = "Pursuing my Maters in Big Data and Analytics (Business Intelligence)"   # TODO: Change this
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
@@ -51,17 +48,15 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a student currently pursuing my Masters in Big Data and Analytics from EAE Business School 
+- 🧑‍💻 I am a student currently pursuing my Masters in Big Data and Analytics (Business Intelligence) from EAE Business School in partnership with Universitat Politècnica de Catalunya
 
-- 🛩️ Previously worked as an Onbase Developer Adminsitrator
+- 🛩️ Previously worked as an Onbase Developer Adminsitrator in Dubai
 
-- 🤖 Versatile developer with expertise in creating an Android app for efficient product comparison, a Burger Builder web app using React, and a movie search website with HTML/CSS. Experienced in hardware projects like a humidity scanner with an FPGA board. Skilled in enhancing online communication through a Chat web app with React and Node.
-
-- 🏂 I love reading, playing any type of sport and travelling.
+- 🤖 Aspiring Data Analyst/Business Intelligence Analyst with proficiency in Workflow Development, SQL, Python, Power BI and object-oriented programming, enabling the creation of customized applications tailored to client requirements. Additionally, expertise in web and mobile application development complements a comprehensive skill-set in Data Analysis. Eager to contribute technical expertise and unwavering commitment to quality to drive corporate success and elevate the company's standing in the IT landscape.
 
 - 📫 How to reach me: [Email](aymanggv@hotmail.com)     [LinkedIn](https://www.linkedin.com/in/ayman-gundru-a516971b2/)     [Instagram](https://www.instagram.com/aymangundru?igshid=YzVkODRmOTdmMw%3D%3D&utm_source=qr)
 
-- 🏠 Barcelona
+- 🏠 Barcelona, Spain
 """)
 
 # Feel free to add other points like your Linkedin, Github, Social Media, etc.

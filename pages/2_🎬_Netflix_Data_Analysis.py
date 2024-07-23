@@ -15,7 +15,6 @@ st.set_page_config(
 
 # ----- Left menu -----
 with st.sidebar:
-    st.image("eae_img.png", width=200)
     st.write("Interactive Project to load a dataset with information about Netflix Movies and Series, extract some insights usign Pandas and displaying them with Matplotlib.")
     st.write("Data extracted from: https://www.kaggle.com/datasets/shivamb/netflix-shows (with some cleaning and modifications)")
 

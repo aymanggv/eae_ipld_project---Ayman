@@ -16,7 +16,6 @@ st.set_page_config(
 
 # ----- Left menu -----
 with st.sidebar:
-    st.image("eae_img.png", width=200)
     st.write("Interactive Project to open, crop, display and save images using NumPy, PIL and Matplotlib.")
 
 
