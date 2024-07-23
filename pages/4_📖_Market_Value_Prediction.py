@@ -24,7 +24,7 @@ st.divider()
 
 @st.cache_data
 def load_data_football():
-    data_path = "data/FootballPlayers_cleaned.xlsx"
+    data_path = "data\FootballPlayers_cleaned.xlsx"
 
     result = pd.read_excel(data_path)  # TODO: Ex 2.1: Load the dataset using Pandas, use the data_path variable and set the index column to "show_id"
 
