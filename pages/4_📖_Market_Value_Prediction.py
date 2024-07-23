@@ -24,10 +24,11 @@ st.divider()
 
 @st.cache_data
 def load_data_football():
-    data_path = "data\FootballPlayers_cleaned.csv"
+    data_path = "data\\FootballPlayers_cleaned.csv"
 
     result = pd.read_csv(data_path)  # TODO: Ex 2.1: Load the dataset using Pandas, use the data_path variable and set the index column to "show_id"
     result = result.drop('Unnamed: 0', axis= 1)
+    
     return result   # a Pandas DataFrame
 
 result = load_data_football()
