@@ -1,6 +1,7 @@
 import streamlit as st
 import base64
 
+
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
@@ -60,3 +61,6 @@ st.write("""
 """)
 
 # Feel free to add other points like your Linkedin, Github, Social Media, etc.
+
+
+
