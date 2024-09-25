@@ -64,7 +64,7 @@ st.write("""
 social_media_links = [
     "https://www.linkedin.com/in/ayman-gundru-a516971b2/",
     "https://www.instagram.com/aymangundru?igshid=YzVkODRmOTdmMw%3D%3D&utm_source=qr",
-    "https://www.github.com/jlnetosci/st-social-media-links",
+    "https://github.com/aymanggv",
 ]
 
 colors = [None, None, "White",]
