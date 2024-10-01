@@ -31,7 +31,7 @@ st.markdown(
     }
     </style>
     <div class="iframe-container"> 
-        <iframe src= "https://app.powerbi.com/reportEmbed?reportId=f6a2fc13-3add-4b51-9414-2981a927c99c&autoAuth=true&ctid=41147bbe-0cc8-476e-b0ba-0a8c4e71e031" 
+        <iframe src= "https://app.powerbi.com/view?r=eyJrIjoiMjlhNWNmNGEtZDg1YS00Nzg3LWEwZjgtOTZkYjE5MjMzMzk5IiwidCI6IjZmODM0MWEzLThlOWEtNDk0Mi04YWFmLTMxMWNhODExNjM4NCJ9" 
         width="1140" height="542" style="border:none;" allowfullscreen="true" scrolling="yes"></iframe>
     </div>
     """,

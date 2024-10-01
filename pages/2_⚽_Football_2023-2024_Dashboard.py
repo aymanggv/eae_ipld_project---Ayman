@@ -32,12 +32,14 @@ st.markdown(
     }
     </style>
     <div class="iframe-container">
-        <iframe src="https://app.powerbi.com/reportEmbed?reportId=6fd799c8-4a74-4206-967f-d07fc2e8d1d2&autoAuth=true&ctid=41147bbe-0cc8-476e-b0ba-0a8c4e71e031" 
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNTJhNmRlZjctMWZiMS00NDI1LTg4MmItNjk5YjllMWM5ZWVkIiwidCI6IjZmODM0MWEzLThlOWEtNDk0Mi04YWFmLTMxMWNhODExNjM4NCJ9" 
         width="1140" height="542" style="border:none;" allowfullscreen="true" scrolling="yes"></iframe>
     </div>
     """,
     unsafe_allow_html=True
 )
+
+#https://app.powerbi.com/reportEmbed?reportId=6fd799c8-4a74-4206-967f-d07fc2e8d1d2&autoAuth=true&ctid=41147bbe-0cc8-476e-b0ba-0a8c4e71e031 -- old link when publish to web diddnt work
 
 st.divider()
 
