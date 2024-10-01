@@ -1,7 +1,6 @@
 import streamlit as st
 import base64
 from st_social_media_links import SocialMediaIcons
-import streamlit.components.v1 as components
 
 
     
@@ -74,7 +73,4 @@ social_media_icons = SocialMediaIcons(social_media_links, colors)
 
 social_media_icons.render()
 
-
-
-components.iframe("https://app.powerbi.com/view?r=eyJrIjoiNTJhNmRlZjctMWZiMS00NDI1LTg4MmItNjk5YjllMWM5ZWVkIiwidCI6IjZmODM0MWEzLThlOWEtNDk0Mi04YWFmLTMxMWNhODExNjM4NCJ9", height=500)
 

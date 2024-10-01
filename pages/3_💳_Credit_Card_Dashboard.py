@@ -1,6 +1,7 @@
 import pandas as pd
 # Some extra libraries for date conversions and build the webapp
 import streamlit as st
+import streamlit.components.v1 as components
 
 from streamlit_pdf_viewer import pdf_viewer
 
@@ -22,22 +23,23 @@ st.divider()
 
 st.header("Interactive Power BI View")
 
-st.markdown(
-    """
-    <style>
-    .iframe-container {
-        text-align: left;
-        margin-left: -212px;  /* Adjust this to move further to the left */
-    }
-    </style>
-    <div class="iframe-container"> 
-        <iframe src= "https://app.powerbi.com/view?r=eyJrIjoiMjlhNWNmNGEtZDg1YS00Nzg3LWEwZjgtOTZkYjE5MjMzMzk5IiwidCI6IjZmODM0MWEzLThlOWEtNDk0Mi04YWFmLTMxMWNhODExNjM4NCJ9" 
-        width="1140" height="542" style="border:none;" allowfullscreen="true" scrolling="yes"></iframe>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     """
+#     <style>
+#     .iframe-container {
+#         text-align: left;
+#         margin-left: -212px;  /* Adjust this to move further to the left */
+#     }
+#     </style>
+#     <div class="iframe-container"> 
+#         <iframe src= "https://app.powerbi.com/view?r=eyJrIjoiMjlhNWNmNGEtZDg1YS00Nzg3LWEwZjgtOTZkYjE5MjMzMzk5IiwidCI6IjZmODM0MWEzLThlOWEtNDk0Mi04YWFmLTMxMWNhODExNjM4NCJ9" 
+#         width="1140" height="542" style="border:none;" allowfullscreen="true" scrolling="yes"></iframe>
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
 
+components.iframe("https://app.powerbi.com/view?r=eyJrIjoiMjlhNWNmNGEtZDg1YS00Nzg3LWEwZjgtOTZkYjE5MjMzMzk5IiwidCI6IjZmODM0MWEzLThlOWEtNDk0Mi04YWFmLTMxMWNhODExNjM4NCJ9", height=542)
 
 st.divider()
 
