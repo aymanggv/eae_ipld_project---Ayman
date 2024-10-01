@@ -41,6 +41,7 @@ st.markdown(
 
 #https://app.powerbi.com/reportEmbed?reportId=6fd799c8-4a74-4206-967f-d07fc2e8d1d2&autoAuth=true&ctid=41147bbe-0cc8-476e-b0ba-0a8c4e71e031 -- old link when publish to web diddnt work
 
+
 st.divider()
 
 st.header("PDF View")
