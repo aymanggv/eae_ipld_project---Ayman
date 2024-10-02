@@ -62,7 +62,7 @@ st.write("""
 """)
 
 social_media_links = [
-    "https://www.linkedin.com/in/ayman-gundru-a516971b2/",
+    "https://www.linkedin.com/in/aymangundru/",
     "https://www.instagram.com/aymangundru?igshid=YzVkODRmOTdmMw%3D%3D&utm_source=qr",
     "https://github.com/aymanggv",
 ]
