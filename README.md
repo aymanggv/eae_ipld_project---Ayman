@@ -5,7 +5,7 @@
 ## Subject: Introduction to Programming Languages for Data - Final Project
 
 
-/*<img alt="Hi There" src="./profpic.jpeg" style="width:300px;" />*/
+```<img alt="Hi There" src="./profpic.jpeg" style="width:300px;" />```
 
 
 ### Author: *Ayman*
