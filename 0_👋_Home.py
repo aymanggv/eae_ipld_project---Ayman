@@ -6,10 +6,10 @@ from st_social_media_links import SocialMediaIcons
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
+    layout="wide",
     page_title="Ayman's Portfolio",
     page_icon="📊",
 )
-
 
 # ----- Left menu -----
 with st.sidebar:

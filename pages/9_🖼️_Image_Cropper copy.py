@@ -9,6 +9,7 @@ from PIL import Image
 
 # ----- Page configs -----
 st.set_page_config(
+    layout="wide",
     page_title="Ayman's Portfolio",
     page_icon="📊",
 )
@@ -37,7 +38,7 @@ else:
         img_arr = np.array(img)
 
 # Displaying the image
-st.image(img_arr, caption="Original Image" if not is_example else "Original example image", use_column_width=True)
+st.image(img_arr, caption="Original Image" if not is_example else "Original example image", use_container_width=True)
 st.write("#")
 
 
@@ -80,7 +81,7 @@ crop_arr = crop_arr = img_arr[crop_min_h:crop_max_h, crop_min_w:crop_max_w]  # T
 # ----- Displaying the cropped image and creating a download button to download the image -----
 
 if type(crop_arr) == np.ndarray:
-    st.image(crop_arr, caption="Cropped Image", use_column_width=True)
+    st.image(crop_arr, caption="Cropped Image", use_container_width=True)
 
     buf = io.BytesIO()
     Image.fromarray(crop_arr).save(buf, format="PNG")
