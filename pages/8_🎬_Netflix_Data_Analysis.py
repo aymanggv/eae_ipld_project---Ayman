@@ -18,6 +18,8 @@ st.set_page_config(
 with st.sidebar:
     st.write("Interactive Project to load a dataset with information about Netflix Movies and Series, extract some insights usign Pandas and displaying them with Matplotlib.")
     st.write("Data extracted from: https://www.kaggle.com/datasets/shivamb/netflix-shows (with some cleaning and modifications)")
+    st.write("###")
+    st.write("**Author:** Ayman")
 
 
 # ----- Title of the page -----

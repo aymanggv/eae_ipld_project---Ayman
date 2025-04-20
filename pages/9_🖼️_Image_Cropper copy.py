@@ -18,6 +18,8 @@ st.set_page_config(
 # ----- Left menu -----
 with st.sidebar:
     st.write("Interactive Project to open, crop, display and save images using NumPy, PIL and Matplotlib.")
+    st.write("###")
+    st.write("**Author:** Ayman")
 
 
 # ----- Title of the page -----

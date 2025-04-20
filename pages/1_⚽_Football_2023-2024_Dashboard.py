@@ -16,6 +16,8 @@ st.set_page_config(
 # ----- Left menu -----
 with st.sidebar:
     st.write("Power BI dashboard created to display the global football analysis of the season 2023/2024.")
+    st.write("###")
+    st.write("**Author:** Ayman")
     
 
 

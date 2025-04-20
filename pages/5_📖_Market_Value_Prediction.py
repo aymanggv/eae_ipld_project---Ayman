@@ -17,6 +17,8 @@ st.set_page_config(
 with st.sidebar:
     st.write("Project to predict the actual market value of football players based on their Fifa stats.")
     st.write("Data extracted from SoFifa.com using web-scraping (with some cleaning and modifications).")
+    st.write("###")
+    st.write("**Author:** Ayman")
 
 
 # ----- Title of the page -----

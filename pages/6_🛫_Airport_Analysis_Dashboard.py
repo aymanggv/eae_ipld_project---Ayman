@@ -16,6 +16,8 @@ st.set_page_config(
 # ----- Left menu -----
 with st.sidebar:
     st.write("Power BI dashboard developed to present cancelled and delayed flights for airports across the USA for the year 2018.")
+    st.write("###")
+    st.write("**Author:** Ayman")
 
 
 # ----- Title of the page -----

@@ -11,6 +11,13 @@ st.set_page_config(
 # ---------- Header ----------
 st.title("🏭 SQL Data Warehouse Project")
 
+
+# ----- Left menu -----
+with st.sidebar:
+    st.write("From raw data to insights with clean folders, SQL pipelines (bronze/silver/gold), and solid docs.")
+    st.write("###")
+    st.write("**Author:** Ayman")
+
 # ---------- Tabs ----------
 tab1, tab2, tab3 = st.tabs(["📘 Overview", "📂 GitHub Repo", "📊 Results / Visuals"])
 

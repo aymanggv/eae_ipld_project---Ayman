@@ -16,6 +16,8 @@ st.set_page_config(
 # ----- Left menu -----
 with st.sidebar:
     st.write("Power BI dashboard developed to present HR related insights.")
+    st.write("###")
+    st.write("**Author:** Ayman")
 
 
 # ----- Title of the page -----
