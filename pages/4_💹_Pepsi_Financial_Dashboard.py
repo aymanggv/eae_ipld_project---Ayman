@@ -7,8 +7,8 @@ from streamlit_pdf_viewer import pdf_viewer
 # ----- Page configs -----
 st.set_page_config(
     layout="wide",
-    page_title="Ayman's Portfolio",
-    page_icon="📊",
+    page_title="Pepsi Financial Dashboard",
+    page_icon="💹",
 )
 
 # ----- Left menu -----
@@ -21,25 +21,25 @@ with st.sidebar:
 
 # ----- Title of the page -----
 st.title("💹 Pepsi Financial Dashboard")
-st.divider()
+#st.divider()
 
-st.header("Interactive Power BI View")
+# st.header("Interactive Power BI View")
 
-st.markdown(
-    """
-    <style>
-    .iframe-container {
-        text-align: left;
-        margin-left: -212px;  /* Adjust this to move further to the left */
-    }
-    </style>
-    <div class="iframe-container">
-        <iframe src="https://app.powerbi.com/reportEmbed?reportId=97d39d5a-95a5-45c4-924d-0bf47f151f63&autoAuth=true&ctid=41147bbe-0cc8-476e-b0ba-0a8c4e71e031" 
-        width="1140" height="842" style="border:none;" allowfullscreen="true" scrolling="yes"></iframe>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     """
+#     <style>
+#     .iframe-container {
+#         text-align: left;
+#         margin-left: -212px;  /* Adjust this to move further to the left */
+#     }
+#     </style>
+#     <div class="iframe-container">
+#         <iframe src="https://app.powerbi.com/reportEmbed?reportId=97d39d5a-95a5-45c4-924d-0bf47f151f63&autoAuth=true&ctid=41147bbe-0cc8-476e-b0ba-0a8c4e71e031" 
+#         width="1140" height="842" style="border:none;" allowfullscreen="true" scrolling="yes"></iframe>
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 
 st.divider()

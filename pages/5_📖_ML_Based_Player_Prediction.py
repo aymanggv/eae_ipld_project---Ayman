@@ -8,8 +8,8 @@ import streamlit as st
 # ----- Page configs -----
 st.set_page_config(
     layout="wide",
-    page_title="Ayman's Portfolio",
-    page_icon="📊",
+    page_title="ML-Based Player Prediction",
+    page_icon="📖",
 )
 
 
@@ -22,7 +22,7 @@ with st.sidebar:
 
 
 # ----- Title of the page -----
-st.title("📖 Market Value Prediction")
+st.title("📖 ML-Based Player Prediction")
 st.divider()
 
 @st.cache_data

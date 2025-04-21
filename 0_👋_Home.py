@@ -38,7 +38,7 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Masters Graduate in Big Data and Analytics (Business Intelligence)"   # TODO: Change this
+current_role = "Master's Graduate in Big Data and Analytics (Business Intelligence)"   # TODO: Change this
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
@@ -50,11 +50,11 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a recent Masters graduate in Big Data and Analytics (Business Intelligence) from EAE Business School, in partnership with Universitat Politècnica de Catalunya.
+- 🧑‍💻 I am a recent Master's graduate in Big Data and Analytics (Business Intelligence) from EAE Business School, in partnership with Universitat Politècnica de Catalunya.
 
-- 🛩️ Previously worked as an Onbase Developer Administrator in Dubai.
+- 🛩️ Previously worked as an Onbase Developer in Dubai.
 
-- 🤖 Aspiring Data Analyst/Business Intelligence Analyst with proficiency in Workflow Development, SQL, Python, Power BI and object-oriented programming, enabling the creation of customized applications tailored to client requirements. Additionally, expertise in web and mobile application development complements a comprehensive skill-set in Data Analysis. Eager to contribute technical expertise and unwavering commitment to quality to drive corporate success and elevate the company's standing in the IT landscape.
+- 🤖 Skilled professional with proficiency in Workflow Development, SQL, Python, Power BI and object-oriented programming, enabling the creation of customized solutions tailored to client requirements. Additionally, expertise in web and mobile application development complements a comprehensive skill-set in Data Analysis and Data Science. Eager to contribute technical expertise and unwavering commitment to quality to drive corporate success and elevate the company's standing in the IT landscape.
 
 - ✉️ My Email: [aymanggv@hotmail.com](mailto:aymanggv@hotmail.com)
 

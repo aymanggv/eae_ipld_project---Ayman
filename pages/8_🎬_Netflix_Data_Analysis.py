@@ -9,8 +9,8 @@ import streamlit as st
 # ----- Page configs -----
 st.set_page_config(
     layout="wide",
-    page_title="Ayman's Portfolio",
-    page_icon="📊",
+    page_title="Netflix Data Analysis",
+    page_icon="🎬",
 )
 
 

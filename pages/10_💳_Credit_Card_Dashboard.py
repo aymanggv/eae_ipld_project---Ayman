@@ -8,8 +8,8 @@ from streamlit_pdf_viewer import pdf_viewer
 # ----- Page configs -----
 st.set_page_config(
     layout="wide",
-    page_title="Ayman's Portfolio",
-    page_icon="📊",
+    page_title="Credit Card Dashboard",
+    page_icon="💳",
 )
 
 

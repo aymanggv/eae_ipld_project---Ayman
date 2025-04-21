@@ -10,8 +10,8 @@ from PIL import Image
 # ----- Page configs -----
 st.set_page_config(
     layout="wide",
-    page_title="Ayman's Portfolio",
-    page_icon="📊",
+    page_title="Image Cropper",
+    page_icon="🖼️",
 )
 
 
@@ -40,7 +40,7 @@ else:
         img_arr = np.array(img)
 
 # Displaying the image
-st.image(img_arr, caption="Original Image" if not is_example else "Original example image", use_container_width=True)
+st.image(img_arr, caption="Original Image" if not is_example else "Original example image", use_column_width=True)
 st.write("#")
 
 
