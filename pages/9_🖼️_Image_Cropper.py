@@ -7,6 +7,7 @@ import io
 from PIL import Image
 
 
+<<<<<<<< HEAD:pages/9_🖼️_Image_Cropper.py
 # ----- Page configs -----
 st.set_page_config(
     layout="wide",
@@ -15,6 +16,8 @@ st.set_page_config(
 )
 
 
+========
+>>>>>>>> 6fcb1f70faef332c0f0aab2f89d7133160067fff:pages/01_image_cropper.py
 # ----- Left menu -----
 with st.sidebar:
     st.write("Interactive Project to open, crop, display and save images using NumPy, PIL and Matplotlib.")
@@ -40,7 +43,7 @@ else:
         img_arr = np.array(img)
 
 # Displaying the image
-st.image(img_arr, caption="Original Image" if not is_example else "Original example image", use_column_width=True)
+st.image(img_arr, caption="Original Image" if not is_example else "Original example image", use_container_width=True)
 st.write("#")
 
 

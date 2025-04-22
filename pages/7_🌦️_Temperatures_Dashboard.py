@@ -5,15 +5,12 @@ import matplotlib.pyplot as plt
 # Some extra libraries for date conversions and build the webapp
 import streamlit as st
 
-
 # ----- Page configs -----
 st.set_page_config(
     layout="wide",
     page_title="Temperatures Dashboard",
     page_icon="🌦️",
 )
-
-
 # ----- Left menu -----
 with st.sidebar:
     st.write("Interactive Project to load a dataset with information about the daily temperatures of 10 cities around the world, extract some insights usign Pandas and displaying them with Matplotlib.")
