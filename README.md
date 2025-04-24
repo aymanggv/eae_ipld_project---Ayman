@@ -75,7 +75,7 @@ This application is deployed using Streamlit Community Cloud. To deploy your own
 - Push your code to a GitHub repository.
 - Sign in to Streamlit Community Cloud.
 - Click on 'New app' and select your repository.
-- Configure the branch and main file (app.py), then deploy.
+- Configure the branch and main file (0_👋_Home.py), then deploy.
 
 ### 📬 Contact
 Feel free to connect with me:  
