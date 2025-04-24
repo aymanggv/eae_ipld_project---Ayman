@@ -61,7 +61,8 @@ Here are some of the projects I've included in my portfolio:
    ```
 3. **Install Dependencies:**
    ```bash
-   pip install -r requirements.txt
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 4. **Run the Appliaction:**
    ```bash
