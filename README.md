@@ -78,6 +78,5 @@ This application is deployed using Streamlit Community Cloud. To deploy your own
 
 ### 📬 Contact
 Feel free to connect with me:  
-[LinkedIn](http://www.linkedin.com/in/aymangundru)   
-[Email](mailto:aymanggv@hotmail.com)
+[LinkedIn](http://www.linkedin.com/in/aymangundru) [Email](mailto:aymanggv@hotmail.com)
 
