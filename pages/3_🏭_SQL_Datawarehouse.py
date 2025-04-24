@@ -1,5 +1,5 @@
 import streamlit as st
-from tabs import DWH_Overview_Tab_3_1, DWH_Github_Repo_Tab_3_2, DWH_EDA_Subtab_3_3, DWH_Advanced_Analytics_Subtab_3_4
+from sql_dwh_tabs import DWH_Overview_Tab_3_1, DWH_Github_Repo_Tab_3_2, DWH_EDA_Subtab_3_3, DWH_Advanced_Analytics_Subtab_3_4
 
 # ---------- Page Config ----------
 st.set_page_config(
@@ -19,7 +19,7 @@ with st.sidebar:
     st.write("**Author:** Ayman")
 
 # ---------- Tabs ----------
-tab1, tab2, tab3 = st.tabs(["📘 Overview", "📂 GitHub Repo", "📊 Results / Visuals"])
+tab1, tab2, tab3 = st.tabs(["📘 Overview", "📂 GitHub Repository", "📊 Results"])
 
 # ---------- Overview Tab ----------
 with tab1:

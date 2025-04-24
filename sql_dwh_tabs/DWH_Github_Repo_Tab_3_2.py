@@ -62,6 +62,14 @@ def show():
                 <li class="file"> <a href="https://github.com/aymanggv/data-warehouse-project/blob/main/data_analysis/advanced_data_analysis/dwh_advanced_analytics.sql"> dwh_advanced_analytics.sql </a> <span class="comment"># SQL script for advanced analysis</span></li>
                 </ul>
             </li>
+            <li>
+                <label class="folder" for="reports">reports</label>
+                <input type="checkbox" id="reports"/>
+                <ul>
+                <li class="file"> <a href="https://github.com/aymanggv/data-warehouse-project/blob/main/data_analysis/reports/report_customer.sql"> report_customer.sql </a> <span class="comment"># SQL script for customer report</span></li>
+                <li class="file"> <a href="https://github.com/aymanggv/data-warehouse-project/blob/main/data_analysis/reports/report_product.sql"> report_product.sql </a> <span class="comment"># SQL script for product report</span></li>                
+                </ul>
+            </li>
             </ul>
         </li>
 

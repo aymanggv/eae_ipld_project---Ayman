@@ -5,7 +5,9 @@ def show():
     st.header("📘 Project Overview")
     st.markdown(""" 
         Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-        This project demonstrates a comprehensive end-to-end data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+        This project demonstrates a comprehensive end-to-end data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.  
+        
+        The entire project can be found on my [Github](https://github.com/aymanggv/data-warehouse-project).
     """) 
     st.markdown("""
     ---
@@ -17,7 +19,7 @@ def show():
 
     # Display the image using Streamlit's `st.image()`
     image = Image.open("data/data_architecture.png")
-    st.image(image, caption="Data Architecture", use_column_width=True)
+    st.image(image, caption="Data Architecture", use_container_width =True)
 
     st.markdown("""
     1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
@@ -93,6 +95,7 @@ def show():
     │data_analysis/
     │   ├── exploratory_data_analysis/      # SQL script for exploratory data analysis
     │   ├── advanced_data_analysis/         # SQL script for advanced data analysis
+    │   ├── reports/                        # SQL script for customer report and product report
     │
     ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
     │   ├── source_crm/                     # CSV files for CRM data
