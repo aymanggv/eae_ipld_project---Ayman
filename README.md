@@ -8,6 +8,8 @@ Welcome to my interactive data portfolio built with [Streamlit](https://streamli
 
 ## 🧠 Projects Overview
 
+Here are some of the projects I've included in my portfolio:
+
 ### 1. ⚽ European Football Dashboard (2023/2024)
 - **Tools:** Power BI, Python
 - **Description:** Analyzed top European leagues to uncover trends in goals, assists, and team performance.
