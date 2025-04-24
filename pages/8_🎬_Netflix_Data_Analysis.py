@@ -5,8 +5,6 @@ import matplotlib.pyplot as plt
 # Some extra libraries to build the webapp
 import streamlit as st
 
-
-<<<<<<<< HEAD:pages/8_🎬_Netflix_Data_Analysis.py
 # ----- Page configs -----
 st.set_page_config(
     layout="wide",
@@ -15,8 +13,6 @@ st.set_page_config(
 )
 
 
-========
->>>>>>>> 6fcb1f70faef332c0f0aab2f89d7133160067fff:pages/02_netflix_data_analysis.py
 # ----- Left menu -----
 with st.sidebar:
     st.write("Interactive Project to load a dataset with information about Netflix Movies and Series, extract some insights usign Pandas and displaying them with Matplotlib.")
