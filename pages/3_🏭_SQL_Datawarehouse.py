@@ -1,5 +1,5 @@
 import streamlit as st
-from sql_dwh_tabs import DWH_Overview_Tab_3_1, DWH_Github_Repo_Tab_3_2, DWH_EDA_Subtab_3_3, DWH_Advanced_Analytics_Subtab_3_4
+from tabs import DWH_Overview_Tab_3_1, DWH_Github_Repo_Tab_3_2, DWH_EDA_Subtab_3_3, DWH_Advanced_Analytics_Subtab_3_4
 
 # ---------- Page Config ----------
 st.set_page_config(
