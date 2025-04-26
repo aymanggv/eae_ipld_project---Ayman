@@ -4,13 +4,13 @@ from PIL import Image
 def show():
     st.header("📘 Project Overview")
     st.markdown(""" 
-        # 🛒 Superstore Data Engineering Pipeline on AWS
+        ### 🛒 Superstore Data Engineering Pipeline on AWS
 
     This project demonstrates an **end-to-end data engineering pipeline** on AWS using a **Superstore orders dataset**. It showcases how to ingest, partition, catalog, query, and visualize time-series retail data efficiently using AWS services like S3, Glue, Athena, and QuickSight.
 
     ---
 
-    ## 🚀 Project Overview
+    ### 🚀 Project Overview
 
     - **Goal**: Analyze daily Superstore orders using a scalable and cost-effective cloud pipeline.
     - **Dataset**: Retail order data, partitioned by date.
@@ -22,7 +22,7 @@ def show():
     st.image(image, caption="Data Architecture", use_container_width =True)
 
     st.markdown("""
-        ## 🧰 Tech Stack
+        ### 🧰 Tech Stack
 
     | Tool               | Role                                          |
     |--------------------|-----------------------------------------------|
@@ -34,7 +34,7 @@ def show():
 
     ---
 
-    ## 📁 Folder Structure in S3
+    ### 📁 Folder Structure in S3
 
     - **Bucket Name**: `superstore`
     - **Main Folder**: `/orders`
@@ -44,7 +44,7 @@ def show():
 
     ---
 
-    ## 🔄 Pipeline Flow
+    ### 🔄 Pipeline Flow
 
     1. **Split Orders by Day**  
     Python script processes raw Superstore data and saves one file per day.
@@ -67,7 +67,7 @@ def show():
 
     ---
 
-    ## 🧠 Key Concepts Demonstrated
+    ### 🧠 Key Concepts Demonstrated
 
     - ✅ **Data Partitioning** for performance and cost-efficiency  
     - ✅ **Serverless querying** with Athena (no ETL needed)  
@@ -77,7 +77,7 @@ def show():
 
     ---
 
-    ## 📈 Sample Use Cases
+    ### 📈 Sample Use Cases
 
     - Identify daily or weekly sales trends.
     - Analyze top-selling products by region.
@@ -86,7 +86,7 @@ def show():
 
     ---
 
-    ## 📝 Next Steps & Improvements
+    ### 📝 Next Steps & Improvements
 
     - Automate daily ingestion using **AWS Lambda** or **Step Functions**.
     - Add **data quality checks** with tools like **Great Expectations**.
@@ -95,7 +95,7 @@ def show():
 
     ---
 
-    ## 📂 Sample Athena Query
+    ### 📂 Sample Athena Query
 
     ```sql
     SELECT snapshot, product_name, SUM(sales) AS total_sales

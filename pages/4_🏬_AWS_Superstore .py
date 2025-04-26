@@ -1,5 +1,5 @@
 import streamlit as st
-from tabs import AWS_Overview_Tab, AWS_Github_Repo_Tab
+from tabs import Tab_AWS_Overview, Tab_AWS_Github_Repo
 
 # ---------- Page Config ----------
 st.set_page_config(
@@ -23,9 +23,9 @@ tab1, tab2 = st.tabs(["📘 Overview", "📂 GitHub Repository"])
 
 # ---------- Overview Tab ----------
 with tab1:
-    AWS_Overview_Tab.show()
+    Tab_AWS_Overview.show()
 
 # ---------- GitHub Repo Tab ----------
 with tab2:
-    AWS_Github_Repo_Tab.show()
+    Tab_AWS_Github_Repo.show()
         
