@@ -42,7 +42,7 @@ Here are some of the projects I've included in my portfolio:
 
 ## 🛠️ Technologies Used
 
-- **Languages:** Python, SQL, JavaScript, HTML, CSS
+- **Languages:** Python, SQL, JavaScript, HTML, CSS, DAX
 - **Data Visualization:** Power BI, Tableau
 - **Workflow Tools:** Alteryx, OnBase
 - **Web Framework:** Streamlit
