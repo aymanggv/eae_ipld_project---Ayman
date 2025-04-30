@@ -7,7 +7,7 @@
 ## Subject: Introduction to Programming Languages for Data - Final Project
 
 
-<img alt="Hi There" src="./eae_img.png" style="width:300px;" />
+<img alt="Hi There" src="data/eae_img.png" style="width:300px;" />
 
 
 ### Author: *Your Name Here*
