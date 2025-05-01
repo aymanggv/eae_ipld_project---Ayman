@@ -19,7 +19,7 @@ with st.sidebar:
     st.write("**Author:** Ayman")
 
 # # ---------- Tabs ----------
-tab1, tab2, tab3 = st.tabs(["📘 Overview", "📂 GitHub Repository" , "📊 Results"])
+tab1, tab2, tab3 = st.tabs(["📘 Overview", "📂 Dataset" , "📊 Results"])
 
 st.markdown(
     """
