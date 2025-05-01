@@ -2,14 +2,17 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+@st.cache_data
+def load_data():
+        data_path = "data/2015_Street_Tree_Census_-_Tree_Data_20250412.csv"
+        temps_df = pd.read_csv(data_path, low_memory=False) 
+        return temps_df 
+
 def show():
     st.subheader("🔍 Data Analysis")
     st.write("Exploration of the NYC Street Trees dataset using Python.")
     
-    
-    data_path = "data/2015_Street_Tree_Census_-_Tree_Data_20250412.csv"
-
-    tree_census = pd.read_csv(data_path, low_memory=False)
+    tree_census = load_data()
     
     tree_census_subset = tree_census[['tree_id', 'tree_dbh', 'stump_diam',
     'curb_loc', 'status', 'health', 'spc_latin', 'steward',
