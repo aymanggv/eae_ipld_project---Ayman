@@ -59,12 +59,12 @@ def show():
         */
         ```
         
-| quarter_number | first_day_of_quarter     | session_count | users_count |
-|----------------|---------------------------|---------------|-------------|
-| '1'            | '2024-01-10 07:45:00'     | '8'           | '5'         |
-| '2'            | '2024-04-12 08:00:00'     | '8'           | '5'         |
-| '3'            | '2023-07-15 09:30:00'     | '5'           | '5'         |
-| '4'            | '2023-10-12 08:30:00'     | '7'           | '6'         |
+        | quarter_number | first_day_of_quarter     | session_count | users_count |
+        |----------------|---------------------------|---------------|-------------|
+        | '1'            | '2024-01-10 07:45:00'     | '8'           | '5'         |
+        | '2'            | '2024-04-12 08:00:00'     | '8'           | '5'         |
+        | '3'            | '2023-07-15 09:30:00'     | '5'           | '5'         |
+        | '4'            | '2023-10-12 08:30:00'     | '7'           | '6'         |
         
         ---
         
@@ -201,9 +201,8 @@ def show():
         HAVING no_of_login_days = no_of_login_days_required
         ORDER BY USER_ID;*/
         ;
-
-
         ```
+
         
         | LOGIN_TIMESTAMP      | max_session_score | USER_ID |
         |----------------------|-------------------|---------|
@@ -237,6 +236,7 @@ def show():
         where first_date not in
         (select distinct date(login_timestamp) from logins
         )
+        ```
         
         | first_date     | last_date     |
         |----------------|---------------|

@@ -13,7 +13,7 @@ st.set_page_config(
 
 # ----- Left menu -----
 with st.sidebar:
-    st.header("Data Analytics and Data Science Portfolio")
+    st.header("Data Analytics, Data Science and Data Engineering Portfolio")
     st.write("###")
     st.write("**Author:** Ayman")
 
