@@ -52,7 +52,7 @@ def show():
 
     ---
 
-    ##$ ✅ Key Insights
+    ### ✅ Key Insights
 
     - Some trees have extremely large trunk diameters, indicating age or data entry anomalies.
     - Species distribution is skewed toward a few common species.
