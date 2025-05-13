@@ -1,5 +1,5 @@
 import streamlit as st
-from tabs import Tab_Noon_Overview, Tab_Noon_Github_Repo, Tab_Noon_Analysis
+from tabs import Tab_Roller_Coaster_Overview, Tab_Roller_Coaster_Dataset, Tab_Roller_Coaster_Results
 
 # ---------- Page Config ----------
 st.set_page_config(
