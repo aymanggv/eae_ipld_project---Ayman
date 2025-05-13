@@ -24,19 +24,19 @@ def show():
 
     ### 🔧 EDA Process
 
-    ### 1. Data Cleaning
+    #### 1. Data Cleaning
     - Dropped irrelevant columns and focused on essential fields.
     - Checked for and addressed missing values.
     - Cleaned and imputed `health`, `sidewalk`, and other categorical columns where necessary.
     - Special handling of `Dead` and `Stump` trees.
 
-    ### 2. Data Exploration
+    #### 2. Data Exploration
     - Visualized tree and stump diameters via histograms and scatter plots.
     - Identified outliers (e.g., trees with `tree_dbh` > 50 inches).
     - Aggregated species frequency and analyzed dominant species across the city.
     - Explored stewardship participation and sidewalk conditions.
 
-    ### 3. Problem Areas
+    #### 3. Problem Areas
     - Assessed environmental problems via features like:
     - `root_stone`, `trunk_wire`, `brch_light`, and more.
     - Summarized how often each problem occurred.
