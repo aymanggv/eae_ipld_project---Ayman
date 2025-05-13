@@ -34,13 +34,13 @@ st.markdown(
 
 # # ---------- Overview Tab ----------
 # with tab1:
-#     Tab_Noon_Overview.show()
+#     Tab_Roller_Coaster_Overview.show()
 
 # # ---------- GitHub Repo Tab ----------
 # with tab2:
-#     Tab_Noon_Github_Repo.show()
+#     Tab_Roller_Coaster_Dataset.show()
     
 # # ---------- Results Tab ----------    
 # with tab3: 
-#     Tab_Noon_Analysis.show()
+#     Tab_Roller_Coaster_Results.show()
         

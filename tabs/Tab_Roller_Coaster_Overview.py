@@ -4,69 +4,74 @@ from PIL import Image
 def show():
     st.header("📘 Project Overview")
     st.markdown(""" 
-        ### 🌳 NYC Street Trees — Exploratory Data Analysis (EDA)
+        ### 🎢 Roller Coasters — Exploratory Data Analysis (EDA)
 
-    This project dives into the 2015 NYC Street Tree Census to understand the condition, diversity, and distribution of street trees across New York City.
+        This project analyzes a global database of roller coasters to uncover patterns related to their design, location, and thrill factors like speed, height, and g-force.
 
-    We explore the relationship between tree health, stewardship, location, and more through data visualization and cleaning techniques.
+        ---
 
-    ---
+        ### 📁 Dataset
 
-    ### 📁 Dataset
+        - **Source**: A dataset of roller coasters (`coaster_db.csv`)
+        - **Included Attributes**:
+        - `coaster_name`, `location`, `manufacturer`, `year_introduced`
+        - Physical features: `speed_mph`, `height_ft`, `Inversions_clean`, `Gforce_clean`
+        - `latitude`, `longitude`, and `Type_Main`
 
-    - **Source**: [NYC Open Data — 2015 Street Tree Census](https://data.cityofnewyork.us/)
-    - **File used**: `2015_Street_Tree_Census_-_Tree_Data.csv`
-    - **Key Columns**:
-    - `tree_id`, `tree_dbh`, `stump_diam`, `status`, `health`, `spc_latin`
-    - `sidewalk`, `steward`, `curb_loc`, and various root/trunk/branch problem indicators
+        ---
 
-    ---
+        ### 🔧 EDA Process
 
-    ### 🔧 EDA Process
+        #### 1. Data Cleaning
 
-    ### 1. Data Cleaning
-    - Dropped irrelevant columns and focused on essential fields.
-    - Checked for and addressed missing values.
-    - Cleaned and imputed `health`, `sidewalk`, and other categorical columns where necessary.
-    - Special handling of `Dead` and `Stump` trees.
+        - Removed unused or redundant columns.
+        - Converted `opening_date_clean` to datetime format.
+        - Handled missing values and cleaned feature names.
 
-    ### 2. Data Exploration
-    - Visualized tree and stump diameters via histograms and scatter plots.
-    - Identified outliers (e.g., trees with `tree_dbh` > 50 inches).
-    - Aggregated species frequency and analyzed dominant species across the city.
-    - Explored stewardship participation and sidewalk conditions.
+        #### 2. Univariate Analysis
 
-    ### 3. Problem Areas
-    - Assessed environmental problems via features like:
-    - `root_stone`, `trunk_wire`, `brch_light`, and more.
-    - Summarized how often each problem occurred.
+        - Examined key roller coaster features:
+        - Distribution of speed, height, number of inversions, and g-force.
+        - Popular years for new coaster introductions.
+        - Common coaster types (`Type_Main`) and manufacturers.
 
-    ---
+        #### 3. Bivariate Analysis
 
-    ### 📈 Visualizations
+        - Explored relationships between features:
+        - Speed vs. height
+        - G-force vs. number of inversions
+        - Trends over time: are coasters getting faster or taller?
 
-    - Tree & stump diameter histograms
-    - Scatter plots of large trees
-    - Bar charts of most common tree species
-    - Value counts of stewardship, health, and condition
+        #### 4. Insights by Location
 
-    ---
+        - Identified locations with the fastest roller coasters (filtered for places with at least 10 entries).
+        - Analyzed geographic trends using latitude and longitude.
 
-    ### ✅ Key Insights
+        ---
 
-    - Some trees have extremely large trunk diameters, indicating age or data entry anomalies.
-    - Species distribution is skewed toward a few common species.
-    - Health data is missing more often in trees that are stumps or dead.
-    - Active stewardship might positively influence tree health.
+        ### 📈 Visualizations
 
-    ---
+        - Histograms and KDE plots for numeric features.
+        - Scatter plots for height vs. speed, etc.
+        - Bar charts for coaster types and manufacturers.
+        - Time series plots for coaster construction trends.
 
-    ### 🚧 Future Improvements
+        ---
 
-    - Add borough-level analysis
-    - Correlate tree health with species and location
-    - Map visualization using folium or geopandas
-    - Predictive modeling for tree health or maintenance needs
+        ### ✅ Key Insights
+
+        - The fastest coasters are often located in major amusement parks in the U.S. and Japan.
+        - A few manufacturers dominate the roller coaster industry.
+        - There’s a visible trend toward taller, faster coasters over time.
+        - More recent coasters tend to offer higher g-forces and more inversions.
+
+        ---
+
+        ### 🚀 Future Work
+
+        - Add interactive visualizations with Plotly or Altair
+        - Build a dashboard summarizing coaster stats by country
+        - Cluster coasters by thrill factor using unsupervised learning
 
     """)
 
