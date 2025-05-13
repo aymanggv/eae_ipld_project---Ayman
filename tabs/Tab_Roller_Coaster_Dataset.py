@@ -4,7 +4,7 @@ import pandas as pd
 def show():
     st.header("📂 Dataset")
     st.markdown("""
-                ##### Roller Coaster Dataset. 
+                ##### Roller Coasters Raw Dataset
                 ---
                 """)
     # st.markdown("""
