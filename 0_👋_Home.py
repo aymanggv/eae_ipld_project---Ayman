@@ -54,7 +54,8 @@ st.write("""
 
 - 🛩️ Previously worked as an Onbase Developer in Dubai.
 
-- 🤖 Skilled professional with proficiency in Workflow Development, SQL, Python, Power BI and object-oriented programming, enabling the creation of customized solutions tailored to client requirements. Additionally, expertise in web and mobile application development complements a comprehensive skill-set in Data Analysis and Data Science. Eager to contribute technical expertise and unwavering commitment to quality to drive corporate success and elevate the company's standing in the IT landscape.
+- 🤖 Skilled in Workflow Development, SQL, Python, Power BI, and object-oriented programming, with experience building tailored web and mobile applications. Strong
+background in Data Analysis, Data Science, and Data Engineering, with a focus on delivering quality solutions that support business growth and success
 
 - ✉️ My Email: [aymanggv@hotmail.com](mailto:aymanggv@hotmail.com)
 
