@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 @st.cache_data
 def load_data():
@@ -19,74 +20,255 @@ def show():
                         ---
                         ### Describing the dataset
                         """)
-        df.describe()
+        st.write(df.describe())
         
         
         
 
         st.markdown("""
                         ---
-                        ### Scatter plot of trees where the diameter > 50 inches
+                        ### Seleciting only relevant columns from the dataset
+                        
+                        ```python
+                        # You can do below or just drop columns
+
+                        df = df[['coaster_name', 
+                        # 'Length', 'Speed', 
+                        'Location', 'Status', 
+                        # 'Opening date',
+                        # 'Type',
+                        'Manufacturer', 
+                        # 'Height restriction', 'Model', 'Height',
+                        # 'Inversions', 'Lift/launch system', 'Cost', 'Trains', 'Park section',
+                        # 'Duration', 'Capacity', 'G-force', 'Designer', 'Max vertical angle',
+                        # 'Drop', 'Soft opening date', 'Fast Lane available', 'Replaced',
+                        # 'Track layout', 'Fastrack available', 'Soft opening date.1',
+                        # 'Closing date', 
+                        # 'Opened', 
+                        # 'Replaced by', 'Website',
+                        # 'Flash Pass Available', 'Must transfer from wheelchair', 'Theme',
+                        # 'Single rider line available', 'Restraint Style',
+                        # 'Flash Pass available', 'Acceleration', 'Restraints', 'Name',
+                        'year_introduced', 'latitude', 'longitude', 'Type_Main',
+                        'opening_date_clean', 
+                        # 'speed1', 'speed2', 'speed1_value', 'speed1_unit',
+                        'speed_mph', 
+                        # 'height_value', 'height_unit', 
+                        'height_ft',
+                        'Inversions_clean', 'Gforce_clean']].copy() #Copy makes python know its brand new dataframe and not just reference to old one
+                        
+                        ```
                         """)
-        big_trees = tree_census_subset[tree_census_subset['tree_dbh'] > 50]
-        fig = big_trees[['tree_id', 'tree_dbh']].plot(kind = 'scatter', x='tree_id', y = 'tree_dbh', figsize= (20,10))
-        plt.tight_layout()
-        st.pyplot(plt.gcf())
         
+        df = df[['coaster_name', 
+                        # 'Length', 'Speed', 
+                        'Location', 'Status', 
+                        # 'Opening date',
+                        # 'Type',
+                        'Manufacturer', 
+                        # 'Height restriction', 'Model', 'Height',
+                        # 'Inversions', 'Lift/launch system', 'Cost', 'Trains', 'Park section',
+                        # 'Duration', 'Capacity', 'G-force', 'Designer', 'Max vertical angle',
+                        # 'Drop', 'Soft opening date', 'Fast Lane available', 'Replaced',
+                        # 'Track layout', 'Fastrack available', 'Soft opening date.1',
+                        # 'Closing date', 
+                        # 'Opened', 
+                        # 'Replaced by', 'Website',
+                        # 'Flash Pass Available', 'Must transfer from wheelchair', 'Theme',
+                        # 'Single rider line available', 'Restraint Style',
+                        # 'Flash Pass available', 'Acceleration', 'Restraints', 'Name',
+                        'year_introduced', 'latitude', 'longitude', 'Type_Main',
+                        'opening_date_clean', 
+                        # 'speed1', 'speed2', 'speed1_value', 'speed1_unit',
+                        'speed_mph', 
+                        # 'height_value', 'height_unit', 
+                        'height_ft',
+                        'Inversions_clean', 'Gforce_clean']].copy()
+        
+        st.markdown("""
+                        ---
+                        ### Converting column 'opening_date_time' to datetime format
+                        
+                        ```python
+                        df['opening_date_clean'] = pd.to_datetime(df['opening_date_clean'])
+                        ```
+                        """)
+        
+        df['opening_date_clean'] = pd.to_datetime(df['opening_date_clean'])
         
         
         st.markdown("""
                         ---
-                        ### Count of total tree types
+                        ### Renaming column
+
                         """)
-        fig = pd.DataFrame(tree_census_subset['spc_latin'].value_counts()).plot(kind='bar', figsize= (20,10))
-        plt.tight_layout()
-        st.pyplot(plt.gcf())
+        
+        df = df.rename(columns={'coaster_name':'Coaster_Name',
+                        'year_introduced': 'Year_Introduced',
+                        'latitude': 'Latitude',
+                        'longitude': 'Longitude',
+                        'opening_date_clean': 'Opening_Date',
+                        'speed_mph': 'Speed_mph',
+                        'height_ft': 'Height_ft',
+                        'Inversions_clean': 'Inversions',
+                        'Gforce_clean': 'Gforce'})
+        st.write(df)
+
+        st.markdown("""
+                        ---
+                        ### Sum of columns
+                        """)
+        
+        st.write(df.isna().sum())
+        
         
 
         st.markdown("""
                         ---
-                        ### Count of the stewards
+                        ### Check for duplicates in column 'Coaster_Name'
                         """)
-        st.write(tree_census_subset['steward'].value_counts())
+        st.write(df.loc[df.duplicated(subset=['Coaster_Name'])])
         
         
         st.markdown("""
                         ---
-                        ### Count of the health of the sidewalk next to the specific tree
+                        ### Checking an example duplicate
                         """) 
-        st.write(tree_census_subset['sidewalk'].value_counts())
+        st.write(df.query('Coaster_Name=="Crystal Beach Cyclone"'))
         
         
         st.markdown("""
                         ---
-                        ### Count of how the trees are lcoated in relation to the curb
+                        ### Removing duplicates
+                        
+                        ```python
+                        df = df.loc[~df.duplicated(subset=['Coaster_Name', 'Location', 'Opening_Date'])]\
+                        .reset_index(drop=True).copy()  
+                        ```
                         """)
-        st.write(tree_census_subset['curb_loc'].value_counts())    
-        
-        
-        
-        st.markdown("""
-                        ---
-                        ### Trees with status as "stump"
-                        """)
-        st.write(tree_census_subset[tree_census_subset['status']== 'Stump'])   
-        
-        
-        st.markdown("""
-                        ---
-                        ### Trees with status as "dead"
-                        """)
-        st.write(tree_census_subset[tree_census_subset['status']== 'Dead'])
+        df = df.loc[~df.duplicated(subset=['Coaster_Name', 'Location', 'Opening_Date'])]\
+        .reset_index(drop=True).copy()    
         
         
         
         st.markdown("""
                         ---
-                        ### Count of trees with different problems
+                        ### Feature understanding (AKA Univariate Analysis)
                         """)
-        tree_problems = tree_census_subset[['root_stone',
-        'root_grate', 'root_other', 'trunk_wire', 'trnk_light', 'trnk_other',
-        'brch_light', 'brch_shoe', 'brch_other']]
+        st.write(df['Year_Introduced'].value_counts())   
         
-        st.write(tree_problems.apply(pd.Series.value_counts))
+        
+        st.markdown("""
+                        ---
+                        ### Count of coasters introduced by year
+                        """)
+
+        ax = df['Year_Introduced'].value_counts().head(10).plot(
+        kind='barh',
+        title='Top Years Coasters Introduced',
+        figsize= (10,5)
+        )
+
+        ax.set_ylabel('Year Introduced')
+        ax.set_xlabel('Count')
+
+        st.pyplot(plt.gcf())
+        plt.clf()
+        
+        
+        
+        st.markdown("""
+                        ---
+                        ### Distribution of the speed of roller coasters
+                        """)
+        
+        ax = df['Speed_mph'].plot(
+        kind='hist',
+        bins=20,
+        title='Coaster Speed (mph)',
+        figsize= (10,5)
+        )
+
+        ax.set_xlabel('Speed (mph)')
+
+        st.pyplot(plt.gcf())
+        plt.clf()
+        
+        
+        st.markdown("""
+                        ---
+                        ### Distribution of the speed of roller coasters
+                        """)
+        
+        ax = df['Speed_mph'].plot(
+        kind='kde',
+        title='Coaster Speed (mph)',
+        figsize= (10,5)
+        )
+
+        ax.set_xlabel('Speed (mph)')
+
+        st.pyplot(plt.gcf())
+        plt.clf()
+        
+        
+        st.markdown("""
+                        ---
+                        ### Coaster Speed vs Height
+                        """)
+        
+        df.plot(kind='scatter', 
+        x='Speed_mph', 
+        y='Height_ft',
+        title = 'Coaster Speed vs Height',
+        figsize= (10,5))
+
+        st.pyplot(plt.gcf())
+        plt.clf()
+        
+        
+        st.markdown("""
+                        ---
+                        ### Coaster Speed vs Height
+                        """)
+        
+        plt.figure(figsize=(10, 5))
+        
+        sns.scatterplot(
+        x='Speed_mph', 
+        y='Height_ft',
+        hue = 'Year_Introduced',
+        data = df)
+
+        st.pyplot(plt.gcf())
+        plt.clf()
+
+
+        st.markdown("""
+                        ---
+                        ### Pairplot of features
+                        """)
+        
+        sns.pairplot(data=df, 
+        vars=['Year_Introduced', 'Speed_mph', 'Height_ft', 'Inversions', 'Gforce'],
+        hue= 'Type_Main',
+        height=1.5,
+        aspect=1.5)
+
+        st.pyplot(plt.gcf())
+        plt.clf()
+        
+        
+        st.markdown("""
+                        ---
+                        ### Correlation between the features
+                        """)
+        
+        df_corr = df[['Year_Introduced', 'Speed_mph', 'Height_ft', 'Inversions', 'Gforce']].dropna().corr()
+        
+        plt.figure(figsize=(10, 5))
+        
+        sns.heatmap(df_corr, annot= True)
+
+        st.pyplot(plt.gcf())
+        plt.clf() 

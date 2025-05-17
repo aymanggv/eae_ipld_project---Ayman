@@ -52,5 +52,5 @@ with tab3:
     """,
     unsafe_allow_html=True
     )
-#     Tab_Roller_Coaster_Results.show()
+    Tab_Roller_Coaster_Results.show()
         
