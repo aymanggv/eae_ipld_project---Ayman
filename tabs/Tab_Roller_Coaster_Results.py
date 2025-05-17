@@ -271,4 +271,4 @@ def show():
         sns.heatmap(df_corr, annot= True)
 
         st.pyplot(plt.gcf())
-        plt.clf() 
+        plt.clf()
