@@ -142,8 +142,7 @@ def show():
                         ### Removing duplicates
                         
                         ```python
-                        df = df.loc[~df.duplicated(subset=['Coaster_Name', 'Location', 'Opening_Date'])]\
-                        .reset_index(drop=True).copy()  
+                        df = df.loc[~df.duplicated(subset=['Coaster_Name', 'Location', 'Opening_Date'])].reset_index(drop=True).copy()  
                         ```
                         """)
         df = df.loc[~df.duplicated(subset=['Coaster_Name', 'Location', 'Opening_Date'])]\
