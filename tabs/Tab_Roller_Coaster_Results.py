@@ -265,9 +265,8 @@ def show():
         
         df_corr = df[['Year_Introduced', 'Speed_mph', 'Height_ft', 'Inversions', 'Gforce']].dropna().corr()
         
-        plt.figure(figsize=(10, 5))
-        
-        sns.heatmap(df_corr, annot= True)
+        fig, ax = plt.subplots(figsize=(10, 5))
+        sns.heatmap(df_corr, annot=True, ax=ax)
 
-        st.pyplot(plt.gcf())
+        st.pyplot(fig)
         plt.clf()
