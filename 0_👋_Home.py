@@ -11,6 +11,8 @@ st.set_page_config(
     page_icon="📊",
 )
 
+
+
 # ----- Left menu -----
 with st.sidebar:
     st.header("Data Analytics, Data Science and Data Engineering Portfolio")
@@ -38,7 +40,7 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Master's Graduate in Big Data and Analytics (Business Intelligence)"   # TODO: Change this
+current_role = "Masters Graduate in Big Data and Analytics (Business Intelligence)"   # TODO: Change this
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
@@ -50,7 +52,7 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a recent Master's graduate in Big Data and Analytics (Business Intelligence) from EAE Business School, in partnership with Universitat Politècnica de Catalunya.
+- 🧑‍💻 I am a recent Masters graduate in Big Data and Analytics (Business Intelligence) from EAE Business School, in partnership with Universitat Politècnica de Catalunya.
 
 - 🛩️ Previously worked as an Onbase Developer in Dubai.
 
@@ -73,5 +75,6 @@ colors = [None, None, "White",]
 social_media_icons = SocialMediaIcons(social_media_links, colors)
 
 social_media_icons.render()
+
 
 
