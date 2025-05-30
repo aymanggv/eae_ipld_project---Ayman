@@ -59,7 +59,7 @@ background in Data Analysis, Data Science, and Data Engineering, with a focus on
 
 - ✉️ My Email: [aymanggv@hotmail.com](mailto:aymanggv@hotmail.com)
 
-- 🏠 Barcelona, Spain
+- 🏠 Barcelona, Spain 
 """)
 
 social_media_links = [
