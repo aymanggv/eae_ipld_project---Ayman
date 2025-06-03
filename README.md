@@ -25,20 +25,15 @@ Here are some of the projects I've included in my portfolio:
 - **Description:** Examined employee metrics such as attrition rates, tenure, and department performance.
 - **Features:** Drill-down capabilities, heatmaps, and predictive insights.
 
-### 4. 🔄 Workflow Automation with OnBase
-- **Tools:** OnBase, SQL, JavaScript
-- **Description:** Streamlined over 10 business workflows, enhancing efficiency by 60% and reducing manual tasks by 40%.
-- **Features:** Automated document routing, approval processes, and notifications.
-
-### 5. 🔄 ETL Pipelines with Alteryx & SQL
+### 4. 🔄 ETL Pipelines with Alteryx & SQL
 - **Tools:** Alteryx, SQL
 - **Description:** Built ETL pipelines to process and clean large datasets for reporting purposes.
 - **Features:** Data blending, transformation, and loading into BI tools.
 
-### 6. 🔄 ETL Pipelines with Alteryx & SQL
-- **Tools:** SQL Server, SSMS, SQL
-- **Description:** Designed and implemented a data warehouse to consolidate sales and operations data.
-- **Features:** Built ETL pipelines, implemented Medallion architecture, modeled fact and dimension tables in a star schema, normalized tables, created views and stored procedures for downstream reporting.
+### 5. 🔄 Workflow Automation with OnBase
+- **Tools:** OnBase, SQL, JavaScript
+- **Description:** Streamlined over 10 business workflows, enhancing efficiency by 60% and reducing manual tasks by 40%.
+- **Features:** Automated document routing, approval processes, and notifications.
 
 ## 🛠️ Technologies Used
 
