@@ -64,7 +64,7 @@ Here are some of the projects I've included in my portfolio:
    streamlit run 0_👋_Home.py
    ```
 
-### 🌐 Deployment
+## 🌐 Deployment
 This application is deployed using Streamlit Community Cloud. To deploy your own version:
 
 - Push your code to a GitHub repository.
@@ -72,7 +72,7 @@ This application is deployed using Streamlit Community Cloud. To deploy your own
 - Click on 'New app' and select your repository.
 - Configure the branch and main file (0_👋_Home.py), then deploy.
 
-### 📬 Contact
+## 📬 Contact
 Feel free to connect with me:  
 [LinkedIn](http://www.linkedin.com/in/aymangundru)   [Email](mailto:aymanggv@hotmail.com)
 
