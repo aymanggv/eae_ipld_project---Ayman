@@ -35,7 +35,7 @@ Here are some of the projects I've included in my portfolio:
 - **Description:** Built ETL pipelines to process and clean large datasets for reporting purposes.
 - **Features:** Data blending, transformation, and loading into BI tools.
 
-  ### 6. 🔄 ETL Pipelines with Alteryx & SQL
+### 6. 🔄 ETL Pipelines with Alteryx & SQL
 - **Tools:** SQL Server, SSMS, SQL
 - **Description:** Designed and implemented a data warehouse to consolidate sales and operations data.
 - **Features:** Built ETL pipelines, implemented Medallion architecture, modeled fact and dimension tables in a star schema, normalized tables, created views and stored procedures for downstream reporting.
