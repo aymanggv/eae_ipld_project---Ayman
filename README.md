@@ -4,7 +4,7 @@ Welcome to my interactive data portfolio built with [Streamlit](https://streamli
 
 ## 🚀 Live Demo
 
-👉 [Explore the Portfolio](https://aymang.streamlit.app)
+👉 [Explore the Portfolio](https://aymang.streamlit.app) 
 
 ## 🧠 Projects Overview
 
@@ -25,20 +25,15 @@ Here are some of the projects I've included in my portfolio:
 - **Description:** Examined employee metrics such as attrition rates, tenure, and department performance.
 - **Features:** Drill-down capabilities, heatmaps, and predictive insights.
 
-### 4. 🔄 Workflow Automation with OnBase
-- **Tools:** OnBase, SQL, JavaScript
-- **Description:** Streamlined over 10 business workflows, enhancing efficiency by 60% and reducing manual tasks by 40%.
-- **Features:** Automated document routing, approval processes, and notifications.
-
-### 5. 🔄 ETL Pipelines with Alteryx & SQL
+### 4. 🔄 ETL Pipelines with Alteryx & SQL
 - **Tools:** Alteryx, SQL
 - **Description:** Built ETL pipelines to process and clean large datasets for reporting purposes.
 - **Features:** Data blending, transformation, and loading into BI tools.
 
-### 6. 🔄 ETL Pipelines with Alteryx & SQL
-- **Tools:** SQL Server, SSMS, SQL
-- **Description:** Designed and implemented a data warehouse to consolidate sales and operations data.
-- **Features:** Built ETL pipelines, implemented Medallion architecture, modeled fact and dimension tables in a star schema, normalized tables, created views and stored procedures for downstream reporting.
+### 5. 🔄 Workflow Automation with OnBase
+- **Tools:** OnBase, SQL, JavaScript
+- **Description:** Streamlined over 10 business workflows, enhancing efficiency by 60% and reducing manual tasks by 40%.
+- **Features:** Automated document routing, approval processes, and notifications.
 
 ## 🛠️ Technologies Used
 
@@ -69,7 +64,7 @@ Here are some of the projects I've included in my portfolio:
    streamlit run 0_👋_Home.py
    ```
 
-### 🌐 Deployment
+## 🌐 Deployment
 This application is deployed using Streamlit Community Cloud. To deploy your own version:
 
 - Push your code to a GitHub repository.
@@ -77,7 +72,7 @@ This application is deployed using Streamlit Community Cloud. To deploy your own
 - Click on 'New app' and select your repository.
 - Configure the branch and main file (0_👋_Home.py), then deploy.
 
-### 📬 Contact
+## 📬 Contact
 Feel free to connect with me:  
 [LinkedIn](http://www.linkedin.com/in/aymangundru)   [Email](mailto:aymanggv@hotmail.com)
 
