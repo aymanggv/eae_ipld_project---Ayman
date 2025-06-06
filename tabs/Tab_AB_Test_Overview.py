@@ -4,82 +4,103 @@ from PIL import Image
 def show():
     st.header("📘 Project Overview")
     st.markdown(""" 
-    A data engineering project simulating a real-world business scenario for a specialty coffee brand operating in Spain. This project focuses on designing and implementing a multi-layered **data warehouse** to unify data across sales, employee activity, and marketing engagement.
+    # A/B Test Analysis: Click-Through Rate on CTA Button
+
+    This repository contains a case study on an A/B test designed to measure the impact of a change on user click behavior. The A/B test involves a control group and an experimental group, with the primary metric being the click-through rate (CTR).
 
     ---
 
-    ## 📌 Objectives
+    ## 📁 Files Overview
 
-    - Centralize disparate datasets into a unified, scalable **data warehouse**
-    - Build **ETL pipelines** using **Alteryx** to automate data transformation
-    - Support business KPIs across departments: Sales, Marketing, HR, and Operations
-    - Enable actionable analytics like product demand by region, employee performance, and social media ROI
-
-    ---
-
-    ## 🏗️ Tech Stack
-
-    - **ETL**: Alteryx
-    - **Data Modeling**: Star Schema
-    - **Database Design**: Fact and Dimension tables
-    - **Scripting**: SQL (for DDL & analysis)
-    - **BI Use Case**: Insights derived from DWH to support expansion and targeting strategy
+    - **`ab_generate_data.py`**: Script to simulate A/B testing data.
+    - **`ab_analysis_case_study.ipynb`**: Jupyter Notebook containing the analysis of the A/B test.
+    - **`ab_analysis.py`**: A Python file to initially practice A/B tetsing before moving on to the case study.  
 
     ---
 
-    ## 🧱 Data Warehouse Structure
+    ## 📊 Objective
 
-    This project implements a **multi-domain DWH** composed of the following:
-
-    ### 🟦 Fact Tables
-    - `SALES_FACT`: transactions, revenue, quantity, store
-    - `CLICKS_FACT`: clickstream events, browser, duration
-    - `EMPLOYEE_FACT`: employee performance, social media engagement
-
-
-    """)
-
-    # Display the image using Streamlit's `st.image()`
-    image = Image.open("data/DWH_Design.png")
-    st.image(image, caption="Data Warehouse", use_container_width =True)
-
-    st.markdown("""
-        ### 🟩 Dimension Tables
-    - `DATE_DIM`: day, month, year
-    - `BROWSER_DIM`: browser type, browser id
-    - `EMPLOYEE_DIM`: name, employee id
-    - `INSTA_CAPTIONS_DIM`: date updated, captions, hashtags
-    - `INSTA_METRICS_DIM`: date updated, impressions, from home, from hashtags, from explore, from other, saves, comments, shares, likes, profile visits, follows
-    - `NEIGHBOURHOODS_DIM`: neighbourhood id, neighbourhood
-    - `PRODUCT_DIM`: product id, product group, product type, product, product description
-    - `ONLINE_CLICKS_DIM`: neighbourhood id, click id, browser id, entry time, duration, attributes
-    - `STORE_DIM`: store id, store location
-    - `TRANSACTIONS_DIM`: date id, transaction id, transaction quantity, store id, product id, employee id
+    To determine whether a new version of a CTA (Call-To-Action) button increases click-through rate compared to the existing version, using both statistical and practical significance.
 
     ---
 
-    ## 🧪 Key Use Cases
+    ## 🧪 Data Generation (`ab_generate_data.py`)
 
-    - Identify high-performing products (e.g., 32% sales growth in Brazilian coffee)
-    - Detect underserved areas like **El Born** with high demand for "Instagrammable" coffee shops
-    - Correlate employee social media activity with store performance
-    - Optimize new store locations using combined sales + clickstream data
+    - **Control Group (`con`)**: 10,000 users, click probability = 0.2
+    - **Experimental Group (`exp`)**: 10,000 users, click probability = 0.6
+    - **Total Users**: 20,000
+    - **Click Data**: Simulated using a binomial distribution
+    - **Additional Columns**:
+    - `user_id`: Unique identifier for each user
+    - `timestamp`: Simulated using 1-minute intervals
+
+    The data is saved to a CSV file: `ab_test_data.csv`
 
     ---
 
-    ## 📊 Sample Query
+    ## 📈 Analysis Steps (`ab_analysis_case_study.ipynb`)
 
-    ```sql
-    -- Total sales by employee for Brazilian coffee in El Born
-    SELECT e.name, SUM(s.revenue) AS total_sales
-    FROM SALES_FACT s
-    JOIN EMPLOYEE_DIM e ON s.employee_id = e.employee_id
-    JOIN PRODUCT_DIM p ON s.product_id = p.product_id
-    JOIN STORE_DIM st ON s.store_id = st.store_id
-    WHERE p.origin = 'Brazil' AND st.neighborhood = 'El Born'
-    GROUP BY e.name
-    ORDER BY total_sales DESC;
-    ```
+    ### 1. 📋 Summary Statistics & Visualization
+
+    - Grouped click data plotted using `seaborn` with yellow (no-click) and black (click) bars
+    - Percentage of clicks annotated for each group
+
+    ### 2. 🧮 Statistical Testing
+
+    - **Test Type**: Two-sample Z-test for proportions
+    - **Hypotheses**:
+    - Null: No difference in click rates between groups
+    - Alternative: Significant difference in click rates
+
+    #### Calculated Metrics:
+    - Click Probability (CTR):
+    - Control group: `p_con_hat`
+    - Experimental group: `p_exp_hat`
+    - Pooled Probability: `p_pooled_hat`
+    - Standard Error: `se`
+    - Z-test Statistic: `test_stat`
+    - p-value: `p_value`
+    - Significance Level (α): 0.05
+
+    #### Results:
+    - ✅ **Statistical Significance** was found  
+    (p-value < 0.05 and test statistic exceeds critical Z-value)
+
+    ### 3. 🧠 Practical Significance
+
+    - **Minimum Detectable Effect (MDE)**: 10%
+    - **95% Confidence Interval** for difference in CTR:
+    - Calculated as `(p_exp_hat - p_con_hat) ± Z * SE`
+    - Example output: CI = (0.04, 0.06)
+
+    #### Decision:
+    - ✅ **Practical Significance Achieved**  
+    (Lower bound of CI > MDE)
+
+    ---
+
+    ## 📌 Conclusions
+
+    - The new CTA button significantly increased the click-through rate.
+    - Both **statistical** and **practical** significance were achieved.
+    - The results are **unlikely due to chance**, and the **effect size is meaningful** for business impact.
+
+    ---
+
+    ## 📚 Tools & Libraries
+
+    - `numpy`
+    - `pandas`
+    - `matplotlib`
+    - `seaborn`
+    - `scipy.stats.norm`
+
+    ---
+
+    ## 💡 Notes
+
+    - Data simulation assumes no bias or systematic error in group assignment or data collection.
+    - Analysis is based on the central limit theorem and large sample approximation.
 
     """)
 
