@@ -1,5 +1,5 @@
 import streamlit as st
-from tabs import Tab_Ckara_Overview, Tab_Ckara_Github_Repo
+from tabs import Tab_AB_Test_Overview, Tab_AB_Test_Github_Repo
 
 # ---------- Page Config ----------
 st.set_page_config(
@@ -33,11 +33,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# # ---------- Overview Tab ----------
-# with tab1:
-#     Tab_Ckara_Overview.show()
+# ---------- Overview Tab ----------
+with tab1:
+    Tab_AB_Test_Overview.show()
 
-# # ---------- GitHub Repo Tab ----------
-# with tab2:
-#     Tab_Ckara_Github_Repo.show()
+# ---------- GitHub Repo Tab ----------
+with tab2:
+    Tab_AB_Test_Github_Repo.show()
         
