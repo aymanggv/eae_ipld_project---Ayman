@@ -74,8 +74,8 @@ def show():
             </ul>
         </li>    
         </li>
-        <li class="file"> <a href="https://github.com/aymanggv/Ckara-Coffee-ETL-Data-Warehouse/blob/main/LICENSE"> LICENSE </a> <span class="comment"># License info</span></li>
-        <li class="file"> <a href="https://github.com/aymanggv/Ckara-Coffee-ETL-Data-Warehouse/blob/main/README.md"> README.md </a> <span class="comment"># Project overview</span></li>
+        <li class="file"> <a href="https://github.com/aymanggv/AB-Testing/blob/main/LICENSE"> LICENSE </a> <span class="comment"># License info</span></li>
+        <li class="file"> <a href="https://github.com/aymanggv/AB-Testing/blob/main/README.md"> README.md </a> <span class="comment"># Project overview</span></li>
         </ul>
         </div>
         """, unsafe_allow_html=True)
