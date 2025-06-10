@@ -1,5 +1,3 @@
-import pandas as pd
-# Some extra libraries for date conversions and build the webapp
 import streamlit as st
 
 from streamlit_pdf_viewer import pdf_viewer
@@ -46,4 +44,4 @@ st.divider()
 
 st.header("PDF View")
 
-pdf_viewer("data/Pepsi Financial Report.pdf")
+pdf_viewer("data/Pepsi Financial Report.pdf", annotations=None)
