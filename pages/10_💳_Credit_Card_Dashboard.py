@@ -48,4 +48,4 @@ st.divider()
 
 st.header("PDF View")
 
-pdf_viewer("data/Credit_Card_Report.pdf")
+pdf_viewer("data/Credit_Card_Report.pdf", annotations=[])

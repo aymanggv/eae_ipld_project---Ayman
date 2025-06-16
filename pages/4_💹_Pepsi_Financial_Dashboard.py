@@ -44,4 +44,4 @@ st.divider()
 
 st.header("PDF View")
 
-pdf_viewer("data/Pepsi Financial Report.pdf", annotations=None)
+pdf_viewer("data/Pepsi Financial Report.pdf", annotations=[])

@@ -48,4 +48,4 @@ st.divider()
 
 st.header("PDF View")
 
-pdf_viewer("data/HR_Analytics.pdf")
+pdf_viewer("data/HR_Analytics.pdf", annotations=[])

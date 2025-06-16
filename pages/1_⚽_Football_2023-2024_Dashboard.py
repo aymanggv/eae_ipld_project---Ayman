@@ -53,4 +53,4 @@ st.divider()
 
 st.header("PDF View")
 
-pdf_viewer("data/Football_Final.pdf")
+pdf_viewer("data/Football_Final.pdf", annotations=[])
