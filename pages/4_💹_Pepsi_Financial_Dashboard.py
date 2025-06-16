@@ -12,7 +12,7 @@ st.set_page_config(
 # ----- Left menu -----
 with st.sidebar:
     st.write("Power BI dashboard created to display financial findings of Pepsi.")
-    st.write("Data recieved from EAE Business School as part of project. The live report can be viewed using the link: https://app.powerbi.com/groups/me/reports/97d39d5a-95a5-45c4-924d-0bf47f151f63/ReportSection3fa583ff48685abe5c72?experience=power-bi")
+    st.markdown("Data received from EAE Business School as part of final project. [Click here to view the live Power BI report](https://app.powerbi.com/groups/me/reports/97d39d5a-95a5-45c4-924d-0bf47f151f63/ReportSection3fa583ff48685abe5c72?experience=power-bi)")
     st.write("###")
     st.write("**Author:** Ayman")
 
