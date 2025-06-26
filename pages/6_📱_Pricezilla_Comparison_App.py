@@ -1,5 +1,5 @@
 import streamlit as st
-
+from tabs import Tab_Yelp_Overview, Tab_Yelp_Github_Repo, Tab_Yelp_Analysis
 
 from streamlit_pdf_viewer import pdf_viewer
 
