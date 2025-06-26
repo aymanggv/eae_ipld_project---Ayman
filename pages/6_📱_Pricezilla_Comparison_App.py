@@ -11,7 +11,6 @@ st.set_page_config(
 
 # ----- Title of the page -----
 st.title("📱 Pricezilla – A Barcode Price Comparison App")
-st.divider()
 
 
 # ----- Left menu -----
