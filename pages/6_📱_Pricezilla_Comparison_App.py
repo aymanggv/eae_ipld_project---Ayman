@@ -10,7 +10,7 @@ st.set_page_config(
 
 
 # ----- Title of the page -----
-st.title("📱 Pricezilla – A Bar-code Based Price Comparison App")
+st.title("📱 Pricezilla – A Barcode Price Comparison App")
 st.divider()
 
 
