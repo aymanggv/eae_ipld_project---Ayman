@@ -4,103 +4,201 @@ from PIL import Image
 def show():
     st.header("📘 Project Overview")
     st.markdown(""" 
-    # A/B Test Analysis: Click-Through Rate on CTA Button
+    # 📱 Pricezilla – A Bar-code Based Price Comparison App
 
-    This repository contains a case study on an A/B test designed to measure the impact of a change on user click behavior. The A/B test involves a control group and an experimental group, with the primary metric being the click-through rate (CTR).
-
-    ---
-
-    ## 📁 Files Overview
-
-    - **`ab_generate_data.py`**: Script to simulate A/B testing data.
-    - **`ab_analysis_case_study.ipynb`**: Jupyter Notebook containing the analysis of the A/B test.
-    - **`ab_analysis.py`**: A Python file to initially practice A/B tetsing before moving on to the case study.  
+    **A Final Year Individual Project**  
+    **Author:** Ayman Gundru
+    **Institution:** Middlesex University  
+    **Module:** CST3515 – Embedded Linux System and Application Development
 
     ---
 
-    ## 📊 Objective
+    ## 📖 Overview
 
-    To determine whether a new version of a CTA (Call-To-Action) button increases click-through rate compared to the existing version, using both statistical and practical significance.
-
-    ---
-
-    ## 🧪 Data Generation (`ab_generate_data.py`)
-
-    - **Control Group (`con`)**: 10,000 users, click probability = 0.2
-    - **Experimental Group (`exp`)**: 10,000 users, click probability = 0.6
-    - **Total Users**: 20,000
-    - **Click Data**: Simulated using a binomial distribution
-    - **Additional Columns**:
-    - `user_id`: Unique identifier for each user
-    - `timestamp`: Simulated using 1-minute intervals
-
-    The data is saved to a CSV file: `ab_test_data.csv`
+    Pricezilla is a barcode-based price comparison Android app designed to help users compare product prices across local and supermarket retailers in the UAE. With integrated barcode scanning, Google Maps links, and nutritional info retrieval, it aims to empower budget-conscious consumers, students, the elderly, and the unemployed to make smarter, quicker, and more economical purchasing decisions.
 
     ---
 
-    ## 📈 Analysis Steps (`ab_analysis_case_study.ipynb`)
+    ## 🎯 Features
 
-    ### 1. 📋 Summary Statistics & Visualization
-
-    - Grouped click data plotted using `seaborn` with yellow (no-click) and black (click) bars
-    - Percentage of clicks annotated for each group
-
-    ### 2. 🧮 Statistical Testing
-
-    - **Test Type**: Two-sample Z-test for proportions
-    - **Hypotheses**:
-    - Null: No difference in click rates between groups
-    - Alternative: Significant difference in click rates
-
-    #### Calculated Metrics:
-    - Click Probability (CTR):
-    - Control group: `p_con_hat`
-    - Experimental group: `p_exp_hat`
-    - Pooled Probability: `p_pooled_hat`
-    - Standard Error: `se`
-    - Z-test Statistic: `test_stat`
-    - p-value: `p_value`
-    - Significance Level (α): 0.05
-
-    #### Results:
-    - ✅ **Statistical Significance** was found  
-    (p-value < 0.05 and test statistic exceeds critical Z-value)
-
-    ### 3. 🧠 Practical Significance
-
-    - **Minimum Detectable Effect (MDE)**: 10%
-    - **95% Confidence Interval** for difference in CTR:
-    - Calculated as `(p_exp_hat - p_con_hat) ± Z * SE`
-    - Example output: CI = (0.04, 0.06)
-
-    #### Decision:
-    - ✅ **Practical Significance Achieved**  
-    (Lower bound of CI > MDE)
+    - 🔍 **Barcode Scanning** – Quickly scan product barcodes using the camera.
+    - 🏷️ **Price Comparison** – Instantly compare prices of products across multiple stores.
+    - 🗺️ **Store Locator** – Find the nearest store via integrated Google Maps links.
+    - 🧾 **Nutritional Info** – View nutritional facts for scanned food items.
+    - 📝 **Product Entry** – Users can manually add missing products to the database.
+    - 🔄 **Real-Time Database** – Powered by Firebase Firestore for live updates and data retrieval.
 
     ---
 
-    ## 📌 Conclusions
+    ## 💡 Motivation
 
-    - The new CTA button significantly increased the click-through rate.
-    - Both **statistical** and **practical** significance were achieved.
-    - The results are **unlikely due to chance**, and the **effect size is meaningful** for business impact.
+    Consumers often overpay due to lack of access to real-time price data across various stores. Most existing apps do not:
 
-    ---
+    - Cover local UAE grocery stores
+    - Offer barcode scanning for localized products
+    - Enable adding new product data
+    - Provide intuitive navigation or design
 
-    ## 📚 Tools & Libraries
-
-    - `numpy`
-    - `pandas`
-    - `matplotlib`
-    - `seaborn`
-    - `scipy.stats.norm`
+    **Pricezilla** bridges this gap with a localized and user-friendly solution.
 
     ---
 
-    ## 💡 Notes
+    ## 🛠️ Tech Stack
 
-    - Data simulation assumes no bias or systematic error in group assignment or data collection.
-    - Analysis is based on the central limit theorem and large sample approximation.
+    | Category           | Tools & Libraries                        |
+    |--------------------|------------------------------------------|
+    | Platform           | Android (Java, XML via Android Studio)   |
+    | Backend/Database   | Firebase Firestore (Real-time DB)        |
+    | Barcode Processing | Firebase ML Kit Vision                   |
+    | UI Design          | draw.io for mockups, XML for layout      |
+    | IDE                | Android Studio                           |
+
+    ---
+
+    ## 🗂️ Project Structure
+    ```
+    ├── barcoede_app/
+    │ ├── src/
+    │   ├── main/
+    │     ├── java/
+    │       ├── com/
+    │       │ └── pricezilla/
+    │       ├── MainActivity.java
+    │       ├── Product.java
+    │       ├── Details.java
+    │       ├── ProductUtil.java
+    │       ├── ProductBaseActivity.java
+    │       ├── ProductAdditionActivity.java
+    │       ├── ProductReaderActivity.java
+    │       ├── ProductDetails.java
+    │       └── SplashActivity.java
+    │     └── res/
+    │     ├── layout/
+    │       ├── activity_main.xml
+    │       ├── product_addition.xml
+    │       ├── product_reader.xml
+    │       ├── product_details.xml
+    │       └── splash_activity.xml
+    │     └── drawable/ (images/icons)
+    │ ├── build.gradle
+    │
+    ├── docs/
+    │ ├── Individual project report.docx
+    │ ├── FYPppt.pptx
+    │
+    ├── images/
+    │
+    ├── LICENSE
+    └── README.md 
+    ```
+
+    ## 🖥️ App Architecture
+
+    ![Data Architecture](images/App_Architecture.png)
+
+    - App scans barcodes via camera and Firebase ML Kit
+    - Barcode number is used to query product info in Firestore
+    - Results (price, stores, nutritional facts) are shown in-app
+    - Google Maps links assist in store navigation
+
+    ---
+
+    ## 🗃️ Database Design
+
+    The app uses **Firebase Firestore**, a real-time NoSQL cloud database, to store and retrieve product and nutritional information efficiently.
+
+    ### 📦 Collections Overview
+
+    There are two primary collections in the Firestore database:
+
+    #### 1. `products`
+    Stores general product and pricing information keyed by barcode.
+    ![Product Database](images/database/Database_Products.png)
+
+
+    #### 2. `details`
+    Stores nutritional facts keyed by barcode.
+    ![Nutrition Database](images/database/Database_Nutrition.png)
+
+
+    ---
+
+    ## 📸 Screenshots
+
+    ### 🖼️ Splash Screen
+    <img src="images/system_screenshots/Splash_Screen.jpg" alt="Splash Screen" width="200"/>
+
+    ##
+
+    ### 🏠 Home Page
+    <img src="images/system_screenshots/Home_Page.jpg" alt="Home Page" width="200"/>
+
+    ##
+
+    ### ➕ Add Product Page
+    <img src="images/system_screenshots/Add_Product_1.jpg" alt="Add Product" width="200"/>
+
+    ##
+
+    ### 🔍 Product Lookup
+    <img src="images/system_screenshots/Get_Product_1.jpg" alt="Product Lookup" width="200"/>
+
+    ##
+
+    ### 🍎 Nutrition Info Viewer
+    <img src="images/system_screenshots/Nutritional_Details.jpg" alt="Nutrition Info" width="200"/>
+
+    ---
+
+    ## ✅ Testing
+
+    ### 🔍 White Box Testing
+
+    All methods (e.g., `onCreate()`, `getProductfromDB()`) successfully passed logic and integration tests.
+
+    ### 🧪 Black Box Testing
+
+    All user-level functions such as scanning, adding, retrieving, and displaying nutritional info passed functionality tests.
+
+    ### 🧑‍💻 Usability Evaluation
+
+    A user survey revealed:
+
+    - ✔️ High satisfaction with simplicity and barcode functionality  
+    - 🎨 Design aesthetics (colors/layout) could be improved
+
+    ---
+
+    ## 🚧 Limitations
+
+    - 📷 Scanning requires clear lighting and angles  
+    - 🛑 Duplicate entries are not flagged  
+    - 🔠 Search is barcode-only (no product-name search)  
+    - 🗺️ Basic store distance integration via Google Maps (no in-app routing)
+
+    ---
+
+    ## 🚀 Future Improvements
+
+    - 🔎 Add keyword/product name search  
+    - 🗺️ Embed Google Maps with route functionality  
+    - 📥 Allow saving product lists (wishlists/favorites)  
+    - 🔔 Implement price alerts  
+    - 🧑‍🤝‍🧑 Integrate a user feedback and rating system
+
+    ---
+
+    ## 📄 License
+
+    This project was developed as part of an academic submission. Please contact the author for use beyond personal or educational purposes.
+
+    ---
+
+    ## 📬 Contact
+
+    For inquiries or collaboration:
+
+    - 📧 Email: [aymanggv@hotmail.com]  
 
     """)
 
