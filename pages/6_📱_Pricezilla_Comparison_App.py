@@ -1,7 +1,5 @@
-import pandas as pd
-# Some extra libraries for date conversions and build the webapp
 import streamlit as st
-import streamlit.components.v1 as components
+
 
 from streamlit_pdf_viewer import pdf_viewer
 
@@ -13,6 +11,11 @@ st.set_page_config(
 )
 
 
+# ----- Title of the page -----
+st.title("📱 Pricezilla – A Bar-code Based Price Comparison App")
+st.divider()
+
+
 # ----- Left menu -----
 with st.sidebar:
     st.write("A barcode-based price comparison Android app designed to help users compare product prices.")
@@ -20,7 +23,18 @@ with st.sidebar:
     st.write("**Author:** Ayman")
 
 
-# ----- Title of the page -----
-st.title("📱 Pricezilla – A Bar-code Based Price Comparison App")
-st.divider()
+# ---------- Tabs ----------
+tab1, tab2, tab3 = st.tabs(["📘 Overview", "📂 GitHub Repository" , "📊 Results"])
 
+# ---------- Overview Tab ----------
+with tab1:
+    Tab_Yelp_Overview.show()
+
+# ---------- GitHub Repo Tab ----------
+with tab2:
+    Tab_Yelp_Github_Repo.show()
+    
+# ---------- Results Tab ----------    
+with tab3: 
+    Tab_Yelp_Analysis.show()
+        
