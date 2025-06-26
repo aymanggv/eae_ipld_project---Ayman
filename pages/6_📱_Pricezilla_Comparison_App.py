@@ -1,6 +1,5 @@
 import streamlit as st
 from tabs import Tab_Pricezilla_App_Overview, Tab_Pricezilla_App_Github_Repo
-from streamlit_pdf_viewer import pdf_viewer
 
 # ----- Page configs -----
 st.set_page_config(
