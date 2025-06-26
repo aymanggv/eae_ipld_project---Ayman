@@ -1,5 +1,5 @@
 import streamlit as st
-from tabs import Tab_Yelp_Overview, Tab_Yelp_Github_Repo
+from tabs import Tab_Pricezilla_App_Overview, Tab_Pricezilla_App_Github_Repo
 from streamlit_pdf_viewer import pdf_viewer
 
 # ----- Page configs -----
@@ -27,10 +27,10 @@ tab1, tab2 = st.tabs(["📘 Overview", "📂 GitHub Repository"])
 
 # ---------- Overview Tab ----------
 with tab1:
-    Tab_Yelp_Overview.show()
+    Tab_Pricezilla_App_Overview.show()
 
 # ---------- GitHub Repo Tab ----------
 with tab2:
-    Tab_Yelp_Github_Repo.show()
+    Tab_Pricezilla_App_Github_Repo.show()
     
         
