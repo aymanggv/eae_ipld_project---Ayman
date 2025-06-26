@@ -2,11 +2,6 @@ import streamlit as st
 
 def show():
     st.header("📂 GitHub Repository")
-    # st.markdown("""
-    #     🔗[Click here to view the full project on GitHub](https://github.com/aymanggv/data-warehouse-project)
-
-    #     _You can explore all code, datasets, and documentation there._  
-    # """)
     
 #     st.markdown(
 #     """
