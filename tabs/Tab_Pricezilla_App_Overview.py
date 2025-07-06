@@ -156,45 +156,35 @@ def show():
     with col1:
         st.markdown("### 🖼️ Splash Screen", unsafe_allow_html=True)
         image1 = Image.open("data/Splash_Screen.jpg")
-        st.image(image1, caption="Splash Screen", use_container_width=True)
+        st.image(image1, caption="Splash Screen", width=350)
         
         
     with col2:
         st.markdown("### 🏠 Home Page", unsafe_allow_html=True)
         image1 = Image.open("data/Home_Page.jpg")
-        st.image(image1, caption="Home Page", use_container_width=True)
+        st.image(image1, caption="Home Page", width=350)
     
     
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("### ➕ Add Product Page", unsafe_allow_html=True)
         image1 = Image.open("data/Add_Product_1.jpg")
-        st.image(image1, caption="Add Product Page", use_container_width=True)
+        st.image(image1, caption="Add Product Page", width=350)
         
         
     with col2:
         st.markdown("### 🔍 Product Lookup", unsafe_allow_html=True)
         image1 = Image.open("data/Get_Product_1.jpg")
-        st.image(image1, caption="Retrieve Product Page", use_container_width=True)
+        st.image(image1, caption="Retrieve Product Page", width=350)
 
     
-    st.markdown(""" 
-    ##
-
-    ### 🔍 Product Lookup
-    """)
-    #Display the image using Streamlit's `st.image()`
-    image = Image.open("data/Get_Product_1.jpg")
-    st.image(image, caption=" Retrieve Product Page", width= 300)
-
-    st.markdown(""" 
-    ##
-
-    ### 🍎 Nutrition Info Viewer
-    """)
-    #Display the image using Streamlit's `st.image()`
-    image = Image.open("data/Nutritional_Details.jpg")
-    st.image(image, caption=" Nutritional Details Page", width= 300)
+    col1, = st.columns(1)
+    with col1:
+        st.markdown("### 🍎 Nutrition Info Viewer", unsafe_allow_html=True)
+        image1 = Image.open("data/Nutritional_Details.jpg")
+        st.image(image1, caption="Nutritional Details Page", width=350)
+        
+        
 
     st.markdown(""" 
     ---
