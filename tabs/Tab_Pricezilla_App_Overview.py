@@ -162,8 +162,12 @@ def show():
     ##
 
     ### 🏠 Home Page
-    <img src="images/system_screenshots/Home_Page.jpg" alt="Home Page" width="200"/>
+    """)
+    #Display the image using Streamlit's `st.image()`
+    image = Image.open("data/Home_Page.jpg")
+    st.image(image, caption=" Home Page", width= 300)
 
+    st.markdown(""" 
     ##
 
     ### ➕ Add Product Page
