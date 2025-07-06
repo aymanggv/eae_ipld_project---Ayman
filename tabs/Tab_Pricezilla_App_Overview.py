@@ -131,9 +131,14 @@ def show():
 
     #### 1. `products`
     Stores general product and pricing information keyed by barcode.
-    ![Product Database](images/database/Database_Products.png)
+    """)
+    
+    #Display the image using Streamlit's `st.image()`
+    image = Image.open("data/Database_Products.png")
+    st.image(image, caption="Prodcuts Database", width= 1000)
 
 
+    st.markdown(""" 
     #### 2. `details`
     Stores nutritional facts keyed by barcode.
     ![Nutrition Database](images/database/Database_Nutrition.png)
