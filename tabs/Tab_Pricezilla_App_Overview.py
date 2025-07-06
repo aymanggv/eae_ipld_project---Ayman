@@ -129,7 +129,7 @@ def show():
 
     There are two primary collections in the Firestore database:
 
-    #### 1. `products`
+    #### 1. `Products`
     Stores general product and pricing information keyed by barcode.
     """)
     
@@ -139,7 +139,7 @@ def show():
 
 
     st.markdown(""" 
-    #### 2. `details`
+    #### 2. `Details`
     Stores nutritional facts keyed by barcode.""")
     
     #Display the image using Streamlit's `st.image()`
@@ -237,7 +237,7 @@ def show():
 
     For inquiries or collaboration:
 
-    - 📧 Email: [aymanggv@hotmail.com]  
-
+    - 📧 Email: [aymanggv@hotmail.com]
+    
     """)
 
