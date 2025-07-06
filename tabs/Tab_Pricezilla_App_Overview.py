@@ -152,13 +152,13 @@ def show():
     ## 📸 Screenshots
 
     ### 🖼️ Splash Screen
+    """)
     
     #Display the image using Streamlit's `st.image()`
     image = Image.open("data/Splash_Screen.jpg")
-    st.image(image, caption="Products Database", width= 1000)
+    st.image(image, caption=" Splash Screen", width= 300)
 
-    <img src="images/system_screenshots/Splash_Screen.jpg" alt="Splash Screen" width="200"/>
-
+    st.markdown(""" 
     ##
 
     ### 🏠 Home Page
