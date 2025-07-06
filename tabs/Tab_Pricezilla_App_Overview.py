@@ -135,15 +135,18 @@ def show():
     
     #Display the image using Streamlit's `st.image()`
     image = Image.open("data/Database_Products.png")
-    st.image(image, caption="Prodcuts Database", width= 1000)
+    st.image(image, caption="Products Database", width= 1000)
 
 
     st.markdown(""" 
     #### 2. `details`
-    Stores nutritional facts keyed by barcode.
-    ![Nutrition Database](images/database/Database_Nutrition.png)
+    Stores nutritional facts keyed by barcode.""")
+    
+    #Display the image using Streamlit's `st.image()`
+    image = Image.open("data/Database_Nutrition.png")
+    st.image(image, caption="Products Database", width= 1000)
 
-
+    st.markdown(""" 
     ---
 
     ## 📸 Screenshots
