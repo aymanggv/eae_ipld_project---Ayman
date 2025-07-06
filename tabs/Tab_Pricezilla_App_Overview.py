@@ -171,18 +171,30 @@ def show():
     ##
 
     ### ➕ Add Product Page
-    <img src="images/system_screenshots/Add_Product_1.jpg" alt="Add Product" width="200"/>
+    """)
+    #Display the image using Streamlit's `st.image()`
+    image = Image.open("data/Add_Product_1.jpg")
+    st.image(image, caption=" Add Product Page", width= 300)
 
+    st.markdown(""" 
     ##
 
     ### 🔍 Product Lookup
-    <img src="images/system_screenshots/Get_Product_1.jpg" alt="Product Lookup" width="200"/>
+    """)
+    #Display the image using Streamlit's `st.image()`
+    image = Image.open("data/Get_Product_1.jpg")
+    st.image(image, caption=" Retrieve Product Page", width= 300)
 
+    st.markdown(""" 
     ##
 
     ### 🍎 Nutrition Info Viewer
-    <img src="images/system_screenshots/Nutritional_Details.jpg" alt="Nutrition Info" width="200"/>
+    """)
+    #Display the image using Streamlit's `st.image()`
+    image = Image.open("data/Nutritional_Details.jpg")
+    st.image(image, caption=" Nutritional Details Page", width= 300)
 
+    st.markdown(""" 
     ---
 
     ## ✅ Testing
