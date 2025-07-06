@@ -144,7 +144,7 @@ def show():
     
     #Display the image using Streamlit's `st.image()`
     image = Image.open("data/Database_Nutrition.png")
-    st.image(image, caption="Products Database", width= 1000)
+    st.image(image, caption="Nutrition Details Database", width= 1000)
 
     st.markdown(""" 
     ---
@@ -152,6 +152,11 @@ def show():
     ## 📸 Screenshots
 
     ### 🖼️ Splash Screen
+    
+    #Display the image using Streamlit's `st.image()`
+    image = Image.open("data/Splash_Screen.jpg")
+    st.image(image, caption="Products Database", width= 1000)
+
     <img src="images/system_screenshots/Splash_Screen.jpg" alt="Splash Screen" width="200"/>
 
     ##
