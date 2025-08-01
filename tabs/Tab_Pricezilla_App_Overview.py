@@ -15,11 +15,9 @@ def show():
 # )
 
     
-    st.markdown(""" 
-    # 📱 Pricezilla – A Bar-code Based Price Comparison App
-
+    st.markdown("""  
     **A Final Year Individual Project**  
-    **Author:** Ayman Gundru
+    **Author:** Ayman Gundru  
     **Institution:** Middlesex University  
     **Module:** CST3515 – Embedded Linux System and Application Development
 
