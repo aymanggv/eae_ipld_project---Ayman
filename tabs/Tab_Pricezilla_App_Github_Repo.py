@@ -123,9 +123,39 @@ def show():
                     <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/docs/FYPppt.pptx">FYPppt.pptx</a></li>
                 </ul>
             </li>
-            <li class="folder">images</li>
-            <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/LICENSE">LICENSE</a></li>
-            <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/README.md">README.md</a></li>
-        </ul>
-        </div>
-        """, unsafe_allow_html=True)
+                <li>
+            <label class="folder" for="images">images</label>
+            <input type="checkbox" id="images"/>
+            <ul>
+                <li>
+                    <label class="folder" for="database">database</label>
+                    <input type="checkbox" id="database"/>
+                    <ul>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/database/Database_Nutrition.png">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/database/Database_Products.png">Database_Products.png</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label class="folder" for="system_screenshots">system_screenshots</label>
+                    <input type="checkbox" id="system_screenshots"/>
+                    <ul>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Add_Product_1.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Add_Product_2.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Add_Product_3.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Get_Product_1.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Get_Product_2.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Get_Product_3.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Home_Page.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Nutritional_Details.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Scan_Barcode.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Splash_Screen.jpg">Database_Nutrition.png</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="file">LICENSE</li>
+        <li class="file">README.md</li>
+    </ul>
+    </div>
+    """, unsafe_allow_html=True)
+

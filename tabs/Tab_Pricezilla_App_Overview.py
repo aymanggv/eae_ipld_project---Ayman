@@ -101,7 +101,7 @@ def show():
     ├── images/
     │ ├── database
     │ ├── system_screenshots
-    │ ├──App_Architecture.png
+    │ ├── App_Architecture.png
     │
     ├── LICENSE
     └── README.md 
