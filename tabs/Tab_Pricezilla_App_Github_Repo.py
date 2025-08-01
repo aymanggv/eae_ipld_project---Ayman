@@ -139,22 +139,23 @@ def show():
                     <label class="folder" for="system_screenshots">system_screenshots</label>
                     <input type="checkbox" id="system_screenshots"/>
                     <ul>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Add_Product_1.jpg">Database_Nutrition.png</a></li>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Add_Product_2.jpg">Database_Nutrition.png</a></li>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Add_Product_3.jpg">Database_Nutrition.png</a></li>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Get_Product_1.jpg">Database_Nutrition.png</a></li>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Get_Product_2.jpg">Database_Nutrition.png</a></li>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Get_Product_3.jpg">Database_Nutrition.png</a></li>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Home_Page.jpg">Database_Nutrition.png</a></li>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Nutritional_Details.jpg">Database_Nutrition.png</a></li>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Scan_Barcode.jpg">Database_Nutrition.png</a></li>
-                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Splash_Screen.jpg">Database_Nutrition.png</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Add_Product_1.jpg">Add_Product_1.jpg</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Add_Product_2.jpg">Add_Product_2.jpg</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Add_Product_3.jpg">Add_Product_3.jpg</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Get_Product_1.jpg">Get_Product_1.jpg</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Get_Product_2.jpg">Get_Product_2.jpg</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Get_Product_3.jpg">Get_Product_3.jpg</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Home_Page.jpg">Home_Page.jpg</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Nutritional_Details.jpg">Nutritional_Details.jpg</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Scan_Barcode.jpg">Scan_Barcode.jpg</a></li>
+                        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/images/system_screenshots/Splash_Screen.jpg">Splash_Screen.jpg</a></li>
                     </ul>
                 </li>
             </ul>
         </li>
-        <li class="file">LICENSE</li>
-        <li class="file">README.md</li>
+        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/LICENSE">LICENSE</a></li>
+        <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/README.md">README.md</a></li>
+
     </ul>
     </div>
     """, unsafe_allow_html=True)
