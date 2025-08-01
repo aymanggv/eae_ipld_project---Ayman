@@ -99,6 +99,9 @@ def show():
     │ ├── FYPppt.pptx
     │
     ├── images/
+    │ ├── database
+    │ ├── system_screenshots
+    │ ├──App_Architecture.png
     │
     ├── LICENSE
     └── README.md 
