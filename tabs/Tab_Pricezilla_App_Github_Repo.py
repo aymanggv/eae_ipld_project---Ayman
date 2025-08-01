@@ -15,61 +15,117 @@ def show():
 
     
 
-    # st.markdown("""
-    #     <style>
-    #     .tree ul {
-    #     list-style-type: none;
-    #     font-family: monospace;
-    #     padding-left: 1em;
-    #     line-height: 1.6;
-    #     }
-    #     .tree input {
-    #     display: none;
-    #     }
-    #     .tree label {
-    #     cursor: pointer;
-    #     }
-    #     .tree input:checked + ul {
-    #     display: block;
-    #     }
-    #     .tree ul ul {
-    #     display: none;
-    #     }
-    #     .folder::before {
-    #     content: "📁 ";
-    #     }
-    #     .file::before {
-    #     content: "📄 ";
-    #     }
-    #     .comment {
-    #     color: gray;
-    #     font-size: 0.85em;
-    #     font-style: italic;
-    #     margin-left: 4px;
-    #     }
-    #     </style>
+    st.markdown("""
+        <style>
+        .tree ul {
+        list-style-type: none;
+        font-family: monospace;
+        padding-left: 1em;
+        line-height: 1.6;
+        }
+        .tree input {
+        display: none;
+        }
+        .tree label {
+        cursor: pointer;
+        }
+        .tree input:checked + ul {
+        display: block;
+        }
+        .tree ul ul {
+        display: none;
+        }
+        .folder::before {
+        content: "📁 ";
+        }
+        .file::before {
+        content: "📄 ";
+        }
+        .comment {
+        color: gray;
+        font-size: 0.85em;
+        font-style: italic;
+        margin-left: 4px;
+        }
+        </style>
 
-    #     <div class="tree">
-    #     <ul>
-    #     <li>
-    #         <label class="folder" for="data">dataset</label>
-    #         <input type="checkbox" id="data"/>
-    #         <ul>
-    #         <li class="file"> <a href="https://github.com/aymanggv/AB-Testing/blob/main/dataset/ab_test_data.csv"> ab_test_data.csv </a> <span class="comment"># Dataset</span></li>
-    #         </ul>
-    #     </li>
-    #     <li>
-    #         <label class="folder" for="scripts">scripts</label>
-    #         <input type="checkbox" id="scripts"/>
-    #         <ul>
-    #         <li class="file"> <a href="https://github.com/aymanggv/AB-Testing/blob/main/scripts/ab_analysis.py"> ab_analysis.py </a> <span class="comment"># AB analysis practice</span></li>
-    #         <li class="file"> <a href="https://github.com/aymanggv/AB-Testing/blob/main/scripts/ab_analysis_case_study.ipynb"> ab_analysis_case_study.ipynb </a> <span class="comment"># Case study ipynb</span></li>
-    #         <li class="file"> <a href="https://github.com/aymanggv/AB-Testing/blob/main/scripts/ab_generate_data.py"> ab_generate_data.py </a> <span class="comment"># Data generation script</span></li>
-    #         </ul>
-    #     </li>    
-    #     </li>
-    #     <li class="file"> <a href="https://github.com/aymanggv/AB-Testing/blob/main/LICENSE"> LICENSE </a> <span class="comment"># License info</span></li>
-    #     <li class="file"> <a href="https://github.com/aymanggv/AB-Testing/blob/main/README.md"> README.md </a> <span class="comment"># Project overview</span></li>
-    #     </ul>
-    #     </div>
-    #     """, unsafe_allow_html=True)
+    <div class="tree">
+        <ul>
+            <li>
+                <label class="folder" for="barcode_app">barcode_app</label>
+                <input type="checkbox" id="barcode_app"/>
+                <ul>
+                    <li>
+                        <label class="folder" for="src">src</label>
+                        <input type="checkbox" id="src"/>
+                        <ul>
+                            <li>
+                                <label class="folder" for="main">main</label>
+                                <input type="checkbox" id="main"/>
+                                <ul>
+                                    <li>
+                                        <label class="folder" for="java">java</label>
+                                        <input type="checkbox" id="java"/>
+                                        <ul>
+                                            <li>
+                                                <label class="folder" for="com">com</label>
+                                                <input type="checkbox" id="com"/>
+                                                <ul>
+                                                    <li>
+                                                        <label class="folder" for="pricezilla">pricezilla</label>
+                                                        <input type="checkbox" id="pricezilla"/>
+                                                        <ul>
+                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/MainActivity.java">MainActivity.java</a></li>
+                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/Product.java">Product.java</a></li>
+                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/Details.java">Details.java</a></li>
+                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductUtil.java">ProductUtil.java</a></li>
+                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductBaseActivity.java">ProductBaseActivity.java</a></li>
+                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductAdditionActivity.java">ProductAdditionActivity.java</a></li>
+                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductReaderActivity.java">ProductReaderActivity.java</a></li>
+                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductDetails.java">ProductDetails.java</a></li>
+                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/SplashActivity.java">SplashActivity.java</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <label class="folder" for="res">res</label>
+                                        <input type="checkbox" id="res"/>
+                                        <ul>
+                                            <li>
+                                                <label class="folder" for="layout">layout</label>
+                                                <input type="checkbox" id="layout"/>
+                                                <ul>
+                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/activity_main.xml">activity_main.xml</a></li>
+                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/product_addition.xml">product_addition.xml</a></li>
+                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/product_reader.xml">product_reader.xml</a></li>
+                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/product_details.xml">product_details.xml</a></li>
+                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/splash_activity.xml">splash_activity.xml</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="folder">drawable <span class="comment"># images/icons</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/build.gradle">build.gradle</a></li>
+                </ul>
+            </li>
+            <li>
+                <label class="folder" for="docs">docs</label>
+                <input type="checkbox" id="docs"/>
+                <ul>
+                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/docs/Individual%20project%20report.docx">Individual project report.docx</a></li>
+                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/docs/FYPppt.pptx">FYPppt.pptx</a></li>
+                </ul>
+            </li>
+            <li class="folder">images</li>
+            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/LICENSE">LICENSE</a></li>
+            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/README.md">README.md</a></li>
+        </ul>
+        </div>
+        """, unsafe_allow_html=True)
