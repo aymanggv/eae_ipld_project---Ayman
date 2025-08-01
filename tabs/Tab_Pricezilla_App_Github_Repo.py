@@ -16,6 +16,10 @@ def show():
     
 
     st.markdown("""
+        > **Note:** Since the project is too large to fully display with clickable GitHub links here,  
+        > I have attached a **ZIP file** of the entire project in this repository.  
+        > The **folder structure** for the app is shown below for reference.
+            
         <style>
         .tree ul {
         list-style-type: none;
@@ -75,15 +79,15 @@ def show():
                                                         <label class="folder" for="pricezilla">pricezilla</label>
                                                         <input type="checkbox" id="pricezilla"/>
                                                         <ul>
-                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/MainActivity.java">MainActivity.java</a></li>
-                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/Product.java">Product.java</a></li>
-                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/Details.java">Details.java</a></li>
-                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductUtil.java">ProductUtil.java</a></li>
-                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductBaseActivity.java">ProductBaseActivity.java</a></li>
-                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductAdditionActivity.java">ProductAdditionActivity.java</a></li>
-                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductReaderActivity.java">ProductReaderActivity.java</a></li>
-                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/ProductDetails.java">ProductDetails.java</a></li>
-                                                            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/java/com/pricezilla/SplashActivity.java">SplashActivity.java</a></li>
+                                                            <li class="file">MainActivity.java</a></li>
+                                                            <li class="file">Product.java</a></li>
+                                                            <li class="file">Details.java</a></li>
+                                                            <li class="file">ProductUtil.java</a></li>
+                                                            <li class="file">ProductBaseActivity.java</a></li>
+                                                            <li class="file">ProductAdditionActivity.java</a></li>
+                                                            <li class="file">ProductReaderActivity.java</a></li>
+                                                            <li class="file">ProductDetails.java</a></li>
+                                                            <li class="file">SplashActivity.java</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -98,11 +102,11 @@ def show():
                                                 <label class="folder" for="layout">layout</label>
                                                 <input type="checkbox" id="layout"/>
                                                 <ul>
-                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/activity_main.xml">activity_main.xml</a></li>
-                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/product_addition.xml">product_addition.xml</a></li>
-                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/product_reader.xml">product_reader.xml</a></li>
-                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/product_details.xml">product_details.xml</a></li>
-                                                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/src/main/res/layout/splash_activity.xml">splash_activity.xml</a></li>
+                                                    <li class="file">activity_main.xml</a></li>
+                                                    <li class="file">product_addition.xml</a></li>
+                                                    <li class="file">product_reader.xml</a></li>
+                                                    <li class="file">product_details.xml</a></li>
+                                                    <li class="file">splash_activity.xml</a></li>
                                                 </ul>
                                             </li>
                                             <li class="folder">drawable <span class="comment"># images/icons</span></li>
@@ -112,20 +116,20 @@ def show():
                             </li>
                         </ul>
                     </li>
-                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/barcode_app/build.gradle">build.gradle</a></li>
+                    <li class="file">build.gradle</a></li>
                 </ul>
             </li>
             <li>
                 <label class="folder" for="docs">docs</label>
                 <input type="checkbox" id="docs"/>
                 <ul>
-                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/docs/Individual%20project%20report.docx">Individual project report.docx</a></li>
-                    <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/docs/FYPppt.pptx">FYPppt.pptx</a></li>
+                    <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/docs/Individual%20project%20report.docx">Individual project report.docx</a></li>
+                    <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/docs/FYPppt.pptx">FYPppt.pptx</a></li>
                 </ul>
             </li>
             <li class="folder">images</li>
-            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/LICENSE">LICENSE</a></li>
-            <li class="file"><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/README.md">README.md</a></li>
+            <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/LICENSE">LICENSE</a></li>
+            <li class="file"><a href="https://github.com/aymanggv/barcode-price-comparison-app/blob/main/README.md">README.md</a></li>
         </ul>
         </div>
         """, unsafe_allow_html=True)
